@@ -105,3 +105,15 @@ html::-webkit-scrollbar {
   z-index: 3;
   background-color: rgba(0, 0, 0, 1);
 }
+
+.text:hover > img{
+  transition: transform 0.3s;
+  position: relative;
+  transform: scale(1.2);
+  z-index: 1;
+  box-shadow: 15px;
+}
+
+.name{
+  overflow: hidden;
+}
