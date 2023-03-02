@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #27262e;
+}
+
+h1, h3{
+  padding: 5px;
+}
+
+h1, h3, div{
+  text-align: center;
+  color: white;
+}
+
+img{
+  transform: scale(0.9);
+  transition: transform 0.3s;
+  box-shadow: 0 0 25px rgb(0, 0, 0);  
+}
+
+img:hover{
+  transition: transform 0.3s;
+  position: relative;
+  transform: scale(1.2);
+  z-index: 1;
+  box-shadow: 15px;
+}
+
+.imgs{
+  transform: scale(1);
+  transition: transform 0.3s;
+  box-shadow: 0 0 0px rgb(0, 0, 0);  
+}
+
+.imgs:hover{
+  transition: transform 0.3s;
+  transform: scale(1);
+}
+
+.s24, .s19{
+  width: 256px;
+  height: 144px;
+}
+
+.a7{
+  width: 256px;
+  height: 144px;
+}
+
+#welcome{
+  background-color: black;
+}
+
+.info{
+  width: 100%;
+  display: block;
+  margin: 0 auto;  
+}
+
+#strength, #agility, #intelegense{
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.hero, .item{
+  background-color: #212121;
+  color: white;
+  height: 50px;
+  width: 49.8%;
+  display: inline;
+  border: white;
+}
+
+.text{
+  margin-left: -26px;
+  padding-top: 5px;
+  width: 307.2px;
+  height: 41px;
+  position: absolute;
+  overflow: hidden;
+  transform: translateY(15px);
+  opacity: 0;
+}
+
+.hero_name{
+  color: white;
+  position: relative;
+  text-align: left;
+}
+
+.name:hover > .text{
+  transform: translateY(-35px);
+  transition: 0.3s;
+  opacity: 1;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 1);
+}
