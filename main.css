@@ -99,6 +99,9 @@ html::-webkit-scrollbar {
 }
 
 .name:hover > .text{
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+.name:hover > .text{
   transform: translateY(-35px);
   transition: 0.3s;
   opacity: 1;
