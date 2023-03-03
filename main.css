@@ -118,13 +118,11 @@ html::-webkit-scrollbar {
 
 .name{
   transform: scale(0.9);
-  
   display: flex;
   align-items: center;
   justify-items: center;
   overflow: hidden;
   box-shadow: 0 0 25px rgb(0, 0, 0);
-
   transition: transform .3s;
 }
 
