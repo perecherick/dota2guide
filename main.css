@@ -61,11 +61,54 @@ img:hover{
   margin: 0 auto;  
 }
 
+.infoi{
+  justify-content: left;
+  width: 100%;
+  display: inline-block;
+
+}
+
 #strength, #agility, #intelegense{
   margin: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#c{
+  margin-left: 5px;
+}
+
+#mainitems{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#consumables, #accessories, #miscellaneous, #armor{
+  width: 26%;
+  margin-left: 35px;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+#atributes, #secret_shop, #support, #weapons{
+  width: 26%; 
+  margin-left: 100px;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+#equipment, #magical, #artifacts{
+  width: 26%;
+  margin-left: 100px;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+#c, #a, #e, #m, #st, #acs, #sup, #mag, #arm, #w, #art{
+  width: 79px;
+  height: 58px;
 }
 
 html::-webkit-scrollbar {
