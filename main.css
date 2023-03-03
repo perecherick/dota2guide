@@ -16,31 +16,6 @@ h1, h3, div{
   color: white;
 }
 
-img{
-  transform: scale(0.9);
-  transition: transform 0.3s;
-  box-shadow: 0 0 25px rgb(0, 0, 0);  
-}
-
-img:hover{
-  transition: transform 0.3s;
-  position: relative;
-  transform: scale(1.2);
-  z-index: 1;
-  box-shadow: 15px;
-}
-
-.imgs{
-  transform: scale(1);
-  transition: transform 0.3s;
-  box-shadow: 0 0 rgb(0, 0, 0); 
-}
-
-.imgs:hover{
-  transition: transform 0.3s;
-  transform: scale(1);
-}
-
 .s24, .s19{
   width: 256px;
   height: 144px;
@@ -127,11 +102,11 @@ html::-webkit-scrollbar {
 .text{
   margin-left: -26px;
   padding-top: 5px;
-  width: 307.2px;
+  width: 280px;
   height: 61px;
   position: absolute;
   overflow: hidden;
-  transform: translateY(-65px);
+  transform: translateY(25px);
   opacity: 0;
 }
 
@@ -141,19 +116,38 @@ html::-webkit-scrollbar {
   padding-top: 20px;
 }
 
-.name:hover > .text{
-  transition: 0.4s;
-  opacity: 1;
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0.5);
+.name{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  transform: scale(0.9);
+  transition: transform 0.3s;
+  box-shadow: 0 0 25px rgb(0, 0, 0);
+}
+
+.name:hover{
+  transition: transform 0.3s;
+  position: relative;
   transform: scale(1.2);
-  transform: translateY(-55px);
+  z-index: 1;
+  box-shadow: 15px;
+}
+
+.text{
+  
+}
+
+.name:hover > .text{
+  opacity: 1;
+  transition: transform 0.3s;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateY(40px);
 }
 
 .name:hover > img{
   transition: transform 0.3s;
   position: relative;
-  transform: scale(1.2);
   z-index: 1;
   box-shadow: 25px;
 }
