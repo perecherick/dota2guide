@@ -26,10 +26,6 @@ h1, h3, div{
   height: 144px;
 }
 
-#welcome{
-  background-color: black;
-}
-
 .info{
   width: 100%;
   display: block;
@@ -95,17 +91,52 @@ h1, h3, div{
   transition: 0.3s;
 }
 
+#allheroes{
+  opacity: 1;
+  position: absolute;
+  z-index: 2;
+}
+
+#allitems{
+  opacity: 0;
+  position: absolute;
+}
+
 html::-webkit-scrollbar {
   display: none;
 }
 
-.hero, .item{
+.high_z {
+  z-index: 2;
+}
+
+.low_z {
+  z-index: 1;
+}
+
+#hero {
   background-color: #212121;
   color: white;
   height: 50px;
-  width: 49.8%;
-  display: inline;
-  border: white;
+  width: 100%;
+  display: inline-block;
+  border: 0;
+  position: absolute;
+}
+
+.buttons{
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#item {
+  border: 0;
+  background-color: #212121;
+  color: white;
+  height: 50px;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
 }
 
 .hero_name{
