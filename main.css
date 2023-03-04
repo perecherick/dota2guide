@@ -84,6 +84,15 @@ h1, h3, div{
 #c, #a, #e, #m, #st, #acs, #sup, #mag, #arm, #w, #art{
   width: 79px;
   height: 58px;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+#c:hover, #a:hover, #e:hover, #m:hover, #st:hover, #acs:hover, #sup:hover, #mag:hover, #arm:hover, #w:hover, #art:hover{
+  width: 79px;
+  height: 58px;
+  transform: scale(1.2);
+  transition: 0.3s;
 }
 
 html::-webkit-scrollbar {
@@ -97,17 +106,6 @@ html::-webkit-scrollbar {
   width: 49.8%;
   display: inline;
   border: white;
-}
-
-.text{
-  margin-left: -26px;
-  padding-top: 5px;
-  width: 280px;
-  height: 61px;
-  position: absolute;
-  overflow: hidden;
-  transform: translateY(25px);
-  opacity: 0;
 }
 
 .hero_name{
@@ -143,8 +141,7 @@ html::-webkit-scrollbar {
 .name h2{
   width: 100%;
   bottom: 0;
-  transform: translateY(40px);
-
+  transform: translateY(60px);
   position: absolute;
   transition: transform .3s;
 }
