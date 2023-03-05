@@ -51,18 +51,8 @@ function hide(){
 
 let heroStrengths = document.querySelectorAll('.hero_strength');
 
-// Перебрать все элементы с классом 'hero_strength'
 heroStrengths.forEach(function(heroStrength) {
-  // Добавить обработчик событий 'click'
   heroStrength.addEventListener('click', function() {
-    // Получить текст, который находится под картинкой
-    // let heroName = heroStrength.nextElementSibling.innerText.trim();
-
-    // Поместить текст в элемент с id 'hero_name'
-    // document.querySelector('#hero_name').innerText = alert(heroName);
-
     $('hero_name').innerText = heroStrength.nextElementSibling.innerText;
   });
 });
-
-$('full_hero').innerText = heroName;
