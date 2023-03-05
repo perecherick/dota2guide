@@ -1,11 +1,52 @@
 *{
   margin: 0;
   padding: 0;
-  cursor: default;
 }
 
 body{
   background-color: #27262e;
+}
+
+h2{
+  user-select: none;
+}
+
+.full_hero_invisible{
+  transition-duration: .3s;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+.full_hero_visible{
+  transition-duration: .3s;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+  background-color: #27262e;
+  justify-content: center;
+}
+
+.detail{
+  width: 256px;
+  height: 144px;
+}
+
+.back{
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #212121;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 h1, h3{
@@ -17,9 +58,10 @@ h1, h3, div{
   color: white;
 }
 
-.s24, .s19{
+.hero_strength, .hero_agility, .hero_intelegense{
   width: 256px;
   height: 144px;
+  cursor: pointer;
 }
 
 .a7{
@@ -48,7 +90,6 @@ h1, h3, div{
 #mainitems{
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
   justify-content: space-evenly;
 }
 

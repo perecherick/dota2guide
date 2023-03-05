@@ -8,6 +8,14 @@
     <title>Dota2 Guide</title>
 </head>
 <body>
+
+    <div id="full_hero" class="full_hero_invisible">
+        <button id="back" class="back" onclick="hide()">BACK</button>
+        <img src="" alt="" id="detail" class="detail">
+        <h1 id="hero_name" class="hero_name">.</h1>
+        <h2 id="hero_description" class="hero_description"></h2>
+    </div>
+
     <div class="buttons">
         <button id="hero" class="high_z" onclick="change()">Герои</button>
         <button id="item" class="low_z" onclick="change()">Предметы</button>
@@ -23,253 +31,253 @@
         </div>
 
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png" alt="" class="s1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png" alt="" class="hero_strength">
                 <h2>
                     ABADDON
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png" alt="" class="s2">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png" alt="" class="hero_strength">
                 <h2>
                     ALCHEMIST
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png" alt="" class="s3">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png" alt="" class="hero_strength">
                 <h2>
                     AXE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/beastmaster.png" alt="" class="s4">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/beastmaster.png" alt="" class="hero_strength">
                 <h2>
                     BEASTMASTER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/brewmaster.png" alt="" class="s5">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/brewmaster.png" alt="" class="hero_strength">
                 <h2>
                     BREWMASTER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bristleback.png" alt="" class="s6">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bristleback.png" alt="" class="hero_strength">
                 <h2>
                     BRISTLEBACK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/centaur.png" alt="" class="s7">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/centaur.png" alt="" class="hero_strength">
                 <h2>
                     CENTAUR WARRUNER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chaos_knight.png" alt="" class="s8">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chaos_knight.png" alt="" class="hero_strength">
                 <h2>
                     CHAOS KNIGHT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rattletrap.png" alt="" class="s9">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rattletrap.png" alt="" class="hero_strength">
                 <h2>
                         CLOCKWERK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png" alt="" class="s10">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png" alt="" class="hero_strength">
                 <h2>
                     DAWNBREAKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/doom_bringer.png" alt="" class="s11">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/doom_bringer.png" alt="" class="hero_strength">
                 <h2>
                     DOOM
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dragon_knight.png" alt="" class="s12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dragon_knight.png" alt="" class="hero_strength">
                 <h2>
                     DRAGON KNIGHT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earth_spirit.png" alt="" class="s13">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earth_spirit.png" alt="" class="hero_strength">
                 <h2>
                     EARTH SPIRIT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earthshaker.png" alt="" class="s14">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earthshaker.png" alt="" class="hero_strength">
                 <h2>
                     EARTHSHAKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/elder_titan.png" alt="" class="s15">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/elder_titan.png" alt="" class="hero_strength">
                 <h2>
                     ELDER TITAN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/huskar.png" alt="" class="s16">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/huskar.png" alt="" class="hero_strength">
                 <h2>
                     HUSKAR
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/wisp.png" alt="" class="s17">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/wisp.png" alt="" class="hero_strength">
                 <h2>
                     IO
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kunkka.png" alt="" class="s18">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kunkka.png" alt="" class="hero_strength">
                 <h2>
                     KUNKKA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/legion_commander.png" alt="" class="s19">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/legion_commander.png" alt="" class="hero_strength">
                 <h2>
                     LEGION COMMANDER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/life_stealer.png" alt="" class="s20">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/life_stealer.png" alt="" class="hero_strength">
                 <h2>
                     LIFESTEALER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lycan.png" alt="" class="s21">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lycan.png" alt="" class="hero_strength">
                 <h2>
                     LYCAN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/magnataur.png" alt="" class="s22">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/magnataur.png" alt="" class="hero_strength">
                 <h2>
                     MAGNUS
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/marci.png" alt="" class="s23">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/marci.png" alt="" class="hero_strength">
                 <h2>
                     MARCI
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mars.png" alt="" class="s24">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mars.png" alt="" class="hero_strength">
                 <h2>
                     MARS
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/night_stalker.png" alt="" class="s25">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/night_stalker.png" alt="" class="hero_strength">
                 <h2>
                     NIGHT STALKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/omniknight.png" alt="" class="s26">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/omniknight.png" alt="" class="hero_strength">
                 <h2>
                     OMNIKNIGHT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phoenix.png" alt="" class="s27">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phoenix.png" alt="" class="hero_strength">
                 <h2>
                     PHOENIX
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/primal_beast.png" alt="" class="s28">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/primal_beast.png" alt="" class="hero_strength">
                 <h2>
                     PRIMAL BEAST
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png" alt="" class="s29">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png" alt="" class="hero_strength">
                 <h2>
                     PUDGE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sand_king.png" alt="" class="s30">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sand_king.png" alt="" class="hero_strength">
                 <h2>
                     SAND KING
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slardar.png" alt="" class="s31">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slardar.png" alt="" class="hero_strength">
                 <h2>
                     SLARDAR
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/snapfire.png" alt="" class="s32">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/snapfire.png" alt="" class="hero_strength">
                 <h2>
                     SNAPFIRE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spirit_breaker.png" alt="" class="s33">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spirit_breaker.png" alt="" class="hero_strength">
                 <h2>
                     SPIRIT BREAKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sven.png" alt="" class="s34">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sven.png" alt="" class="hero_strength">
                 <h2>
                     SVEN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tidehunter.png" alt="" class="s35">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tidehunter.png" alt="" class="hero_strength">
                 <h2>
                     TIDEHUNTER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shredder.png" alt="" class="s36">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shredder.png" alt="" class="hero_strength">
                 <h2>
                     TIMBERSAW
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tiny.png" alt="" class="s37">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tiny.png" alt="" class="hero_strength">
                 <h2>
                     TINY
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/treant.png" alt="" class="s38">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/treant.png" alt="" class="hero_strength">
                 <h2>
                     TREANT PROTECTOR
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tusk.png" alt="" class="s39">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tusk.png" alt="" class="hero_strength">
                 <h2>
                     TUSK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abyssal_underlord.png" alt="" class="s40">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abyssal_underlord.png" alt="" class="hero_strength">
                 <h2>
                     UNDERLORD
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png" alt="" class="s41">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png" alt="" class="hero_strength">
                 <h2>
                     UNDYUING
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skeleton_king.png" alt="" class="s42">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skeleton_king.png" alt="" class="hero_strength">
                 <h2>
                     WRAITH KING
                 </h2>
@@ -283,229 +291,229 @@
         </div>
 
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png" alt="" class="a1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png" alt="" class="hero_agility">
                 <h2>
                     ANTIMAGE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/arc_warden.png" alt="" class="a2">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/arc_warden.png" alt="" class="hero_agility">
                 <h2>
                     ARC WARDEN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bloodseeker.png" alt="" class="a3">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bloodseeker.png" alt="" class="hero_agility">
                 <h2>
                     BLOODSEEKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bounty_hunter.png" alt="" class="a4">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bounty_hunter.png" alt="" class="hero_agility">
                 <h2>
                     BOUNTY HUNTER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png" alt="" class="a5">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png" alt="" class="hero_agility">
                 <h2>
                     BROODMOTHER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/clinkz.png" alt="" class="a6">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/clinkz.png" alt="" class="hero_agility">
                 <h2>
                     CLINKZ
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png" alt="" class="a7">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png" alt="" class="hero_agility">
                 <h2>
                     DROW RANGER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ember_spirit.png" alt="" class="a8">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ember_spirit.png" alt="" class="hero_agility">
                 <h2>
                     EMBER SPIRIT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/faceless_void.png" alt="" class="a9">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/faceless_void.png" alt="" class="hero_agility">
                 <h2>
                     FACELESS VOID
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/gyrocopter.png" alt="" class="a10">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/gyrocopter.png" alt="" class="hero_agility">
                 <h2>
                     GYROCOPTER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/hoodwink.png" alt="" class="a11">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/hoodwink.png" alt="" class="hero_agility">
                 <h2>
                     HOODWINK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png" alt="" class="a12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png" alt="" class="hero_agility">
                 <h2>
                     JUGGERNAUT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lone_druid.png" alt="" class="a13">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lone_druid.png" alt="" class="hero_agility">
                 <h2>
                     LONE DRUID
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/luna.png" alt="" class="a14">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/luna.png" alt="" class="hero_agility">
                 <h2>
                     LUNA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/medusa.png" alt="" class="a15">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/medusa.png" alt="" class="hero_agility">
                 <h2>
                     MEDUSA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/meepo.png" alt="" class="a16">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/meepo.png" alt="" class="hero_agility">
                 <h2>
                     MEEPO
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mirana.png" alt="" class="a17">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mirana.png" alt="" class="hero_agility">
                 <h2>
                     MIRANA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/monkey_king.png" alt="" class="a18">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/monkey_king.png" alt="" class="hero_agility">
                 <h2>
                     MONKEY KING
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/morphling.png" alt="" class="a19">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/morphling.png" alt="" class="hero_agility">
                 <h2>
                     MORPHLING
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/naga_siren.png" alt="" class="a20">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/naga_siren.png" alt="" class="hero_agility">
                 <h2>
                     NAGA SIREN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nyx_assassin.png" alt="" class="a21">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nyx_assassin.png" alt="" class="hero_agility">
                 <h2>
                     NYX ASSASSIN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pangolier.png" alt="" class="a22">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pangolier.png" alt="" class="hero_agility">
                 <h2>
                     PANGOLIER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_assassin.png" alt="" class="a23">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_assassin.png" alt="" class="hero_agility">
                 <h2>
                     PHANTOM ASSASSIN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_lancer.png" alt="" class="a24">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_lancer.png" alt="" class="hero_agility">
                 <h2>
                     PHANTOM LANCER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/razor.png" alt="" class="a25">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/razor.png" alt="" class="hero_agility">
                 <h2>
                     RAZOR
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/riki.png" alt="" class="a26">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/riki.png" alt="" class="hero_agility">
                 <h2>
                     RIKI
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nevermore.png" alt="" class="a27">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nevermore.png" alt="" class="hero_agility">
                 <h2>
                     SHADOW FIEND
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slark.png" alt="" class="a28">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slark.png" alt="" class="hero_agility">
                 <h2>
                     SLARK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png" alt="" class="a29">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png" alt="" class="hero_agility">
                 <h2>
                     SNIPER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spectre.png" alt="" class="a30">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spectre.png" alt="" class="hero_agility">
                 <h2>
                     SPECTRE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/templar_assassin.png" alt="" class="a31">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/templar_assassin.png" alt="" class="hero_agility">
                 <h2>
                     TEMPLAR ASSASSIN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/terrorblade.png" alt="" class="a32">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/terrorblade.png" alt="" class="hero_agility">
                 <h2>
                     TERRORBLADE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/troll_warlord.png" alt="" class="a33">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/troll_warlord.png" alt="" class="hero_agility">
                 <h2>
                     TROLL WARLORD
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ursa.png" alt="" class="a34">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ursa.png" alt="" class="hero_agility">
                 <h2>
                     URSA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/vengefulspirit.png" alt="" class="a35">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/vengefulspirit.png" alt="" class="hero_agility">
                 <h2>
                     VENGEFUL SPIRIT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/venomancer.png" alt="" class="a36">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/venomancer.png" alt="" class="hero_agility">
                 <h2>
                     VENOMANCER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png" alt="" class="a37">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png" alt="" class="hero_agility">
                 <h2>
                     VIPER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/weaver.png" alt="" class="a38">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/weaver.png" alt="" class="hero_agility">
                 <h2>
                     WEAWER
                 </h2>
@@ -517,301 +525,301 @@
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png" alt="" class="imgs">
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png" alt="" class="i1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png" alt="" class="hero_intelegense">
 
                 <h2>
                     ANCIENT APPARITION
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bane.png" alt="" class="i2">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bane.png" alt="" class="hero_intelegense">
 
                 <h2>
                     BANE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/batrider.png" alt="" class="i3">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/batrider.png" alt="" class="hero_intelegense">
 
                 <h2>
                     BATRIDER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chen.png" alt="" class="i4">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chen.png" alt="" class="hero_intelegense">
 
                 <h2>
                     CHEN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png" alt="" class="i5">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png" alt="" class="hero_intelegense">
 
                 <h2>
                     CRYSTAL MAIDEN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_seer.png" alt="" class="i6">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_seer.png" alt="" class="hero_intelegense">
 
                 <h2>
                     DARK SEER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_willow.png" alt="" class="i7">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_willow.png" alt="" class="hero_intelegense">
 
                 <h2>
                     DARK WILLOW
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png" alt="" class="i8">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png" alt="" class="hero_intelegense">
 
                 <h2>
                     DAZZLE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/death_prophet.png" alt="" class="i9">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/death_prophet.png" alt="" class="hero_intelegense">
 
                 <h2>
                     DEATH PROPHET
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/disruptor.png" alt="" class="i10">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/disruptor.png" alt="" class="hero_intelegense">
 
                 <h2>
                     DISRUPTOR
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png" alt="" class="i11">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png" alt="" class="hero_intelegense">
 
                 <h2>
                     ENCHANTRESS
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png" alt="" class="i12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png" alt="" class="hero_intelegense">
 
                 <h2>
                     ENIGMA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/grimstroke.png" alt="" class="i13">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/grimstroke.png" alt="" class="hero_intelegense">
 
                 <h2>
                     GRIMSTROKE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/invoker.png" alt="" class="i14">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/invoker.png" alt="" class="hero_intelegense">
 
                 <h2>
                     INVOKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/jakiro.png" alt="" class="i15">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/jakiro.png" alt="" class="hero_intelegense">
 
                 <h2>
                     JAKIRO
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/keeper_of_the_light.png" alt="" class="i16">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/keeper_of_the_light.png" alt="" class="hero_intelegense">
 
                 <h2>
                     KEEPER OF THE LIGHT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/leshrac.png" alt="" class="i17">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/leshrac.png" alt="" class="hero_intelegense">
 
                 <h2>
                     LESHRAC
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lich.png" alt="" class="i18">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lich.png" alt="" class="hero_intelegense">
 
                 <h2>
                     LICH
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lina.png" alt="" class="i19">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lina.png" alt="" class="hero_intelegense">
 
                 <h2>
                     LINA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png" alt="" class="i20">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png" alt="" class="hero_intelegense">
 
                 <h2>
                     LION
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/furion.png" alt="" class="i21">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/furion.png" alt="" class="hero_intelegense">
 
                 <h2>
                     NATURE'S PROPHET
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png" alt="" class="i22">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png" alt="" class="hero_intelegense">
 
                 <h2>
                     NECROPHOS
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png" alt="" class="i23">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png" alt="" class="hero_intelegense">
 
                 <h2>
                     OGRE MAGI
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/oracle.png" alt="" class="i24">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/oracle.png" alt="" class="hero_intelegense">
 
                 <h2>
                     ORACLE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/obsidian_destroyer.png" alt="" class="i25">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/obsidian_destroyer.png" alt="" class="hero_intelegense">
 
                 <h2>
                     OUTWORLD DESTROYER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/puck.png" alt="" class="i26">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/puck.png" alt="" class="hero_intelegense">
 
                 <h2>
                     PUCK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pugna.png" alt="" class="i27">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pugna.png" alt="" class="hero_intelegense">
 
                 <h2>
                     PUGNA
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/queenofpain.png" alt="" class="i28">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/queenofpain.png" alt="" class="hero_intelegense">
 
                 <h2>
                     QUEEN OF PAIN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rubick.png" alt="" class="i29">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rubick.png" alt="" class="hero_intelegense">
 
                 <h2>
                     RUBICK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_demon.png" alt="" class="i30">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_demon.png" alt="" class="hero_intelegense">
 
                 <h2>
                     SHADOW DEMON
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_shaman.png" alt="" class="i31">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_shaman.png" alt="" class="hero_intelegense">
 
                 <h2>
                     SHADOW SHAMAN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/silencer.png" alt="" class="i32">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/silencer.png" alt="" class="hero_intelegense">
 
                 <h2>
                     SILENCER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skywrath_mage.png" alt="" class="i33">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skywrath_mage.png" alt="" class="hero_intelegense">
 
                 <h2>
                     SKYWRATH MAGE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/storm_spirit.png" alt="" class="i34">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/storm_spirit.png" alt="" class="hero_intelegense">
 
                 <h2>
                     STORM SPIRIT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/techies.png" alt="" class="i35">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/techies.png" alt="" class="hero_intelegense">
 
                 <h2>
                     TECHIES
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tinker.png" alt="" class="i36">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tinker.png" alt="" class="hero_intelegense">
 
                 <h2>
                     TINKER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/visage.png" alt="" class="i37">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/visage.png" alt="" class="hero_intelegense">
 
                 <h2>
                     VISAGE
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/void_spirit.png" alt="" class="i38">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/void_spirit.png" alt="" class="hero_intelegense">
 
                 <h2>
                     VOID SPIRIT
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/warlock.png" alt="" class="i39">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/warlock.png" alt="" class="hero_intelegense">
 
                 <h2>
                     WARLOCK
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/windrunner.png" alt="" class="i40">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/windrunner.png" alt="" class="hero_intelegense">
 
                 <h2>
                     WINDRANGER
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/winter_wyvern.png" alt="" class="i41">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/winter_wyvern.png" alt="" class="hero_intelegense">
 
                 <h2>
                     WINTER WYVERN
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/witch_doctor.png" alt="" class="i42">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/witch_doctor.png" alt="" class="hero_intelegense">
 
                 <h2>
                     WITCH DOCTOR
                 </h2>
         </div>
         <div class="name">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/zuus.png" alt="" class="i43">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/zuus.png" alt="" class="hero_intelegense">
 
                 <h2>
                     ZEUS
@@ -824,12 +832,12 @@
 
 <div id="allitems">
 
-    <div class="info">
+    <div class="hero_intelegensefo">
     Основые предметы
     </div>
     <div id="mainitems">
         <div id="consumables">
-            <div class="info">
+            <div class="hero_intelegensefo">
                 Расходники  
             </div>
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tpscroll.png" alt="" id="c" class="c1">
@@ -848,25 +856,25 @@
         </div>
 
         <div id="atributes">
-            <div class="info">
+            <div class="hero_intelegensefo">
                 Атрибуты    
             </div>
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png" alt="" id="a" class="ia1">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png" alt="" id="a" class="ia2">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/slippers.png" alt="" id="a" class="ia3">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mantle.png" alt="" id="a" class="ia4">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png" alt="" id="a" class="ia5">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/belt_of_strength.png" alt="" id="a" class="ia6">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/band_of_elvenskin.png" alt="" id="a" class="ia7">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/robe.png" alt="" id="a" class="ia8">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crown.png" alt="" id="a" class="ia9">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ogre_axe.png" alt="" id="a" class="ia10">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_of_alacrity.png" alt="" id="a" class="ia11">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/staff_of_wizardry.png" alt="" id="a" class="ia12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gauntlets.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/slippers.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mantle.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/belt_of_strength.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/band_of_elvenskin.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/robe.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crown.png" alt="" id="a" class="hero_intelegense">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ogre_axe.png" alt="" id="a" class="hero_intelegense0">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_of_alacrity.png" alt="" id="a" class="hero_intelegense1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/staff_of_wizardry.png" alt="" id="a" class="hero_intelegense">
         </div>
 
         <div id="equipment">
-            <div class="info">
+            <div class="hero_intelegensefo">
                 Снаряжение  
             </div>
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png" alt="" id="e" class="e1">
@@ -888,7 +896,7 @@
         </div>
     </div>
     <div id="miscellaneous">
-        <div class="info">
+        <div class="hero_intelegensefo">
             Разное
         </div>
 
@@ -907,84 +915,84 @@
         <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png" alt="" id="m" class="m1">
     </div>
 
-    <div id="secret_shop">
-        <div class="info">
+    <div class="hero_strengthecret_shop">
+        <div class="hero_intelegensefo">
                 Потайная лавка
         </div>
 
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_health.png" alt="" id="st" class="st1">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/void_stone.png" alt="" id="st" class="st2">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/energy_booster.png" alt="" id="st" class="st3">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vitality_booster.png" alt="" id="st" class="st4">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/point_booster.png" alt="" id="st" class="st5">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/talisman_of_evasion.png" alt="" id="st" class="st6">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/platemail.png" alt="" id="st" class="st7">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hyperstone.png" alt="" id="st" class="st8">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_orb.png" alt="" id="st" class="st9">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/demon_edge.png" alt="" id="st" class="st10">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mystic_staff.png" alt="" id="st" class="st11">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/reaver.png" alt="" id="st" class="st12">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/eagle_lg.png" alt="" id="st" class="st13">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/relic.png" alt="" id="st" class="st14">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_health.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/void_stone.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/energy_booster.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vitality_booster.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/point_booster.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/talisman_of_evasion.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/platemail.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hyperstone.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_orb.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/demon_edge.png" alt="" class="hero_strengtht" class="hero_strength0">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mystic_staff.png" alt="" class="hero_strengtht" class="hero_strength1">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/reaver.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/eagle_lg.png" alt="" class="hero_strengtht" class="hero_strength">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/relic.png" alt="" class="hero_strengtht" class="hero_strength">
         
     </div>
 
-    <div class="info">
+    <div class="hero_intelegensefo">
             Улучшеные предметы
     </div>
 
     <div id="mainitems">
         <div id="accessories">
-            <div class="info">
+            <div class="hero_intelegensefo">
                 Аксессуары
             </div>
 
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_wand.png" alt="" id="acs" class="acs1">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/null_talisman.png" alt="" id="acs" class="acs2">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_band.png" alt="" id="acs" class="acs3">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bracer.png" alt="" id="acs" class="acs4">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_ring.png" alt="" id="acs" class="acs5">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_corrosion.png" alt="" id="acs" class="acs6">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/falcon_blade.png" alt="" id="acs" class="acs7">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png" alt="" id="acs" class="acs8">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png" alt="" id="acs" class="acs9">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/oblivion_staff.png" alt="" id="acs" class="acs10">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pers.png" alt="" id="acs" class="acs11">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mask_of_madness.png" alt="" id="acs" class="acs12">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png" alt="" id="acs" class="acs13">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/helm_of_the_dominator.png" alt="" id="acs" class="acs14">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png" alt="" id="acs" class="acs15">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/moon_shard.png" alt="" id="acs" class="acs16">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots_2.png" alt="" id="acs" class="acs17">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/helm_of_the_overlord.png" alt="" id="acs" class="acs18">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_wand.png" alt="" id="acs" class="hero_agilitys1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/null_talisman.png" alt="" id="acs" class="hero_agilitys2">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_band.png" alt="" id="acs" class="hero_agilitys3">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bracer.png" alt="" id="acs" class="hero_agilitys4">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_ring.png" alt="" id="acs" class="hero_agilitys5">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_corrosion.png" alt="" id="acs" class="hero_agilitys6">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/falcon_blade.png" alt="" id="acs" class="hero_agilitys7">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png" alt="" id="acs" class="hero_agilitys8">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png" alt="" id="acs" class="hero_agilitys9">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/oblivion_staff.png" alt="" id="acs" class="hero_agilitys10">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pers.png" alt="" id="acs" class="hero_agilitys11">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mask_of_madness.png" alt="" id="acs" class="hero_agilitys12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png" alt="" id="acs" class="hero_agilitys13">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/helm_of_the_dominator.png" alt="" id="acs" class="hero_agilitys14">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png" alt="" id="acs" class="hero_agilitys15">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/moon_shard.png" alt="" id="acs" class="hero_agilitys16">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots_2.png" alt="" id="acs" class="hero_agilitys17">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/helm_of_the_overlord.png" alt="" id="acs" class="hero_agilitys18">
         </div>
 
-        <div id="support">
-            <div class="info">
+        <div class="hero_strengthupport">
+            <div class="hero_intelegensefo">
                 Помощь
             </div>
 
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/buckler.png" alt="" id="sup" class="sup1">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_basilius.png" alt="" id="sup" class="sup2">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/headdress.png" alt="" id="sup" class="sup3">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/urn_of_shadows.png" alt="" id="sup" class="sup4">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tranquil_boots.png" alt="" id="sup" class="sup5">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/medallion_of_courage.png" alt="" id="sup" class="sup6">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png" alt="" id="sup" class="sup7">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ancient_janggo.png" alt="" id="sup" class="sup8">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mekansm.png" alt="" id="sup" class="sup9">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/holy_locket.png" alt="" id="sup" class="sup10">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vladmir.png" alt="" id="sup" class="sup11">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/spirit_vessel.png" alt="" id="sup" class="sup12">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pipe.png" alt="" id="sup" class="sup13">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/guardian_greaves.png" alt="" id="sup" class="sup14">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/boots_of_bearing.png" alt="" id="sup" class="sup15">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_pact.png" alt="" id="sup" class="sup16">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/buckler.png" alt="" class="hero_strengthup" class="hero_strengthp1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ring_of_basilius.png" alt="" class="hero_strengthup" class="hero_strengthp2">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/headdress.png" alt="" class="hero_strengthup" class="hero_strengthp3">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/urn_of_shadows.png" alt="" class="hero_strengthup" class="hero_strengthp4">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tranquil_boots.png" alt="" class="hero_strengthup" class="hero_strengthp5">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/medallion_of_courage.png" alt="" class="hero_strengthup" class="hero_strengthp6">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png" alt="" class="hero_strengthup" class="hero_strengthp7">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ancient_janggo.png" alt="" class="hero_strengthup" class="hero_strengthp8">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mekansm.png" alt="" class="hero_strengthup" class="hero_strengthp9">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/holy_locket.png" alt="" class="hero_strengthup" class="hero_strengthp10">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vladmir.png" alt="" class="hero_strengthup" class="hero_strengthp11">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/spirit_vessel.png" alt="" class="hero_strengthup" class="hero_strengthp12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pipe.png" alt="" class="hero_strengthup" class="hero_strengthp13">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/guardian_greaves.png" alt="" class="hero_strengthup" class="hero_strengthp14">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/boots_of_bearing.png" alt="" class="hero_strengthup" class="hero_strengthp15">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_pact.png" alt="" class="hero_strengthup" class="hero_strengthp16">
 
         </div>
 
         <div id="magical">
-            <div class="info">
+            <div class="hero_intelegensefo">
                     Магия
             </div>
 
@@ -1010,31 +1018,31 @@
 
     <div id="mainitems">
         <div id="armor">
-            <div class="info">
+            <div class="hero_intelegensefo">
                  Броня
             </div>
 
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hood_of_defiance.png" alt="" id="arm" class="arm1">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vanguard.png" alt="" id="arm" class="arm2">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png" alt="" id="arm" class="arm3">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/aeon_disk.png" alt="" id="arm" class="arm4">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_booster.png" alt="" id="arm" class="arm5">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/eternal_shroud_lg.png" alt="" id="arm" class="arm6">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crimson_guard.png" alt="" id="arm" class="arm7">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lotus_orb.png" alt="" id="arm" class="arm8">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png" alt="" id="arm" class="arm9">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hurricane_pike.png" alt="" id="arm" class="arm10">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/manta.png" alt="" id="arm" class="arm11">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sphere.png" alt="" id="arm" class="arm12">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shivas_guard.png" alt="" id="arm" class="arm13">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png" alt="" id="arm" class="arm14">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png" alt="" id="arm" class="arm15">
-        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bloodstone.png" alt="" id="arm" class="arm16">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hood_of_defiance.png" alt="" id="arm" class="hero_agilitym1">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vanguard.png" alt="" id="arm" class="hero_agilitym2">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png" alt="" id="arm" class="hero_agilitym3">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/aeon_disk.png" alt="" id="arm" class="hero_agilitym4">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_booster.png" alt="" id="arm" class="hero_agilitym5">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/eternal_shroud_lg.png" alt="" id="arm" class="hero_agilitym6">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crimson_guard.png" alt="" id="arm" class="hero_agilitym7">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lotus_orb.png" alt="" id="arm" class="hero_agilitym8">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png" alt="" id="arm" class="hero_agilitym9">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hurricane_pike.png" alt="" id="arm" class="hero_agilitym10">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/manta.png" alt="" id="arm" class="hero_agilitym11">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sphere.png" alt="" id="arm" class="hero_agilitym12">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shivas_guard.png" alt="" id="arm" class="hero_agilitym13">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png" alt="" id="arm" class="hero_agilitym14">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png" alt="" id="arm" class="hero_agilitym15">
+        <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bloodstone.png" alt="" id="arm" class="hero_agilitym16">
 
         </div>
 
         <div id="weapons">
-            <div class="info">
+            <div class="hero_intelegensefo">
                 Оружие
             </div>
 
@@ -1060,28 +1068,28 @@
         </div>
 
         <div id="artifacts">
-            <div class="info">
+            <div class="hero_intelegensefo">
                 Артифакты
             </div>
 
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dragon_lance.png" alt="" id="art" class="art1">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sange.png" alt="" id="art" class="art2">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/yasha.png" alt="" id="art" class="art3">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/kaya.png" alt="" id="art" class="art4">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/echo_sabre_lg.png" alt="" id="art" class="art5">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/maelstrom_lg.png" alt="" id="art" class="art6">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png" alt="" id="art" class="art7">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mage_slayer.png" alt="" id="art" class="art8">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/heavens_halberd_lg.png" alt="" id="art" class="art9">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/kaya_and_sange.png" alt="" id="art" class="art10">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sange_and_yasha.png" alt="" id="art" class="art11">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/yasha_and_kaya.png" alt="" id="art" class="art12">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png" alt="" id="art" class="art13">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png" alt="" id="art" class="art14">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/mjollnir_lg.png" alt="" id="art" class="art15">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/overwhelming_blink_lg.png" alt="" id="art" class="art16">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/swift_blink.png" alt="" id="art" class="art17">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_blink.png" alt="" id="art" class="art18">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dragon_lance.png" alt="" id="art" class="hero_agilityt1">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sange.png" alt="" id="art" class="hero_agilityt2">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/yasha.png" alt="" id="art" class="hero_agilityt3">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/kaya.png" alt="" id="art" class="hero_agilityt4">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/echo_sabre_lg.png" alt="" id="art" class="hero_agilityt5">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/maelstrom_lg.png" alt="" id="art" class="hero_agilityt6">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png" alt="" id="art" class="hero_agilityt7">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mage_slayer.png" alt="" id="art" class="hero_agilityt8">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/heavens_halberd_lg.png" alt="" id="art" class="hero_agilityt9">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/kaya_and_sange.png" alt="" id="art" class="hero_agilityt10">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sange_and_yasha.png" alt="" id="art" class="hero_agilityt11">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/yasha_and_kaya.png" alt="" id="art" class="hero_agilityt12">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png" alt="" id="art" class="hero_agilityt13">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png" alt="" id="art" class="hero_agilityt14">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/mjollnir_lg.png" alt="" id="art" class="hero_agilityt15">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/overwhelming_blink_lg.png" alt="" id="art" class="hero_agilityt16">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/swift_blink.png" alt="" id="art" class="hero_agilityt17">
+            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_blink.png" alt="" id="art" class="hero_agilityt18">
 
         </div>
 
