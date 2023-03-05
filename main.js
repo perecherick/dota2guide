@@ -7,16 +7,14 @@ function change() {
       hero.classList.add('low_z');
       item.classList.remove('low_z');
       item.classList.add('high_z');
-      document.getElementById("allheroes").style.opacity="0";
-      document.getElementById("allitems").style.opacity="1";
-      document.getElementById("allheroes").style.zIndex="0";
+      document.getElementById("allheroes").style.display="none";
+      document.getElementById("allitems").style.display="block";
     } else {
       hero.classList.remove('low_z');
       hero.classList.add('high_z');
       item.classList.remove('high_z');
       item.classList.add('low_z');
-      document.getElementById("allheroes").style.opacity="1";
-      document.getElementById("allitems").style.opacity="0";
-      document.getElementById("allheroes").style.zIndex="1";
-    }
+      document.getElementById("allheroes").style.display="block";
+      document.getElementById("allitems").style.display="none";
   }
+}
