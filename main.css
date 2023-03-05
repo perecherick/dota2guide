@@ -49,25 +49,23 @@ h1, h3, div{
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 #consumables, #accessories, #miscellaneous, #armor{
   width: 26%;
-  margin-left: 60px;
   display: inline-block;
   flex-wrap: wrap;
 }
 
 #atributes, #secret_shop, #support, #weapons{
   width: 26%; 
-  margin-left: 108px;
   display: inline-block;
   flex-wrap: wrap;
 }
 
 #equipment, #magical, #artifacts{
   width: 26%;
-  margin-left: 88px;
   display: inline-block;
   flex-wrap: wrap;
 }
