@@ -58,7 +58,7 @@ h1, h3, div{
   color: white;
 }
 
-.hero_strength, .hero_agility, .hero_intelegense{
+.hero_strength, .hero_agility, .hero_intelegense, .hero_universal{
   width: 256px;
   height: 144px;
   cursor: pointer;
@@ -76,7 +76,7 @@ h1, h3, div{
   font-size: 35px;
 }
 
-#strength, #agility, #intelegense{
+#strength, #agility, #intelegense, #universal{
   margin: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -174,8 +174,26 @@ html::-webkit-scrollbar {
 
 .hero_name{
   color: white;
-  position: relative;
-  padding-top: 20px;
+  display: block;
+  padding-top: 150px;
+  display: flex;
+  position: absolute;
+}
+
+.hero_description{
+  color: white;
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  top: 25%;
+}
+
+.recomendet_items{
+  position: absolute;
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  top: 45%;
 }
 
 .name{
