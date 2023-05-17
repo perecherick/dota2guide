@@ -94,11 +94,76 @@ function addRecommendedItems() {
 
   var imageSources = [
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png"
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png"
+  ];
+
+  for (var i = 0; i < imageSources.length; i++) {
+      var newImage = document.createElement("img");
+      newImage.src = imageSources[i];
+      newImage.alt = "Image " + (i + 1);
+      newImage.id = "a";
+      recomendetItemsDiv.appendChild(newImage);
+  }
+}
+
+function addTextToDescription2() {
+  var heroDescription = document.getElementById("hero_description");
+  heroDescription.innerHTML = 'Акс - герой 3 позиции, разчитаный на иннициацию. Изначально имеет не так много брони, что компенсируется его 1 способностью, которая при активации даёт много брони и заставляет врагов поблизости атаковать его. Хорошо работает в комбинации с 3 пассивной способностью, которая заставляет акса крутится, тем самым наносить чистый урон врагам в небольшом радиусе. Хорошо подходят ему blink dagger, blade mail, phase boots, vanguard(на линию). Его ультимейт позволяет мгновенно убить цель при определённом количестве здоровья врага.';
+}
+
+function addRecommendedItems2() {
+  var recomendetItemsDiv = document.getElementById("recomendet_items");
+
+  var imageSources = [
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/vanguard.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shivas_guard.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/crimson_guard.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/overwhelming_blink_lg.png"
+  ];
+
+  for (var i = 0; i < imageSources.length; i++) {
+      var newImage = document.createElement("img");
+      newImage.src = imageSources[i];
+      newImage.alt = "Image " + (i + 1);
+      newImage.id = "a";
+      recomendetItemsDiv.appendChild(newImage);
+  }
+}
+
+function addTextToDescription106() {
+  var heroDescription = document.getElementById("hero_description");
+  heroDescription.innerHTML = 'Ио(висп) - герой поддержки, который связывается с союзником, лечит и усиливает его. 1 способность позволяет ускорить вас и союзника в связке, так-же вы будете передватать всё восстановленное вами хп и ману союзника. 2 способность поможет вам фармить и наносить урон врагам. 3 способность ускоряет вашу скорость атаки и скорость атаки союзника, а так-же даёт доп. урон от заклинаний. Ультимейт позволяет вам и связанному с вами союзником переместиться на любую точку карты с задержкой. Спустя 12 секунд вы возвращаетесь на начальную точку.';
+}
+
+function addRecommendedItems106() {
+  var recomendetItemsDiv = document.getElementById("recomendet_items");
+
+  var imageSources = [
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mekansm.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/holy_locket.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/urn_of_shadows.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/spirit_vessel.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pipe.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/guardian_greaves.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pavise.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/glimmer_cape.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/heavens_halberd_lg.png"
   ];
 
   for (var i = 0; i < imageSources.length; i++) {

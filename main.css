@@ -89,24 +89,23 @@ h1, h3, div{
 
 #mainitems{
   display: flex;
-  justify-content: flex-start;
   justify-content: space-evenly;
 }
 
 #consumables, #accessories, #miscellaneous, #armor{
-  width: 33%;
+  width: 25%;
   display: inline-block;
   flex-wrap: wrap;
 }
 
 #atributes, #secret_shop, #support, #weapons{
-  width: 33%; 
+  width: 25%; 
   display: inline-block;
   flex-wrap: wrap;
 }
 
 #equipment, #magical, #artifacts{
-  width: 33%;
+  width: 25%;
   display: inline-block;
   flex-wrap: wrap;
 }
