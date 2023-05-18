@@ -26,68 +26,66 @@ function change() {
 const detail_img = $('detail');
 const full_hero = $('full_hero');
 
-for(let element of document.getElementsByClassName('hero_strength'))
-  element.onclick = function(){
+
+
+let heroes = document.getElementsByClassName('hero');
+
+for (let el of heroes)
+  el.onclick = function() {
+
+    let hero_name = this.nextElementSibling.innerText;
+
     detail_img.src = this.src;
+    $('hero_name').innerText = hero_name;
     full_hero.classList.add('full_hero_visible');
+
+    uploadHeroDescription(hero_name);
+    uploadHeroItems(hero_name);
 }
 
-for(let element of document.getElementsByClassName('hero_agility'))
-  element.onclick = function(){
-    detail_img.src = this.src;
-    full_hero.classList.add('full_hero_visible');
+function uploadHeroDescription (hero_name) {
+
+  if (hero_name == 'ALCHEMIST')
+    $("hero_description").innerHTML = 'Алхимик - герой 1 позиции, который выигрывает за счёт перевеса в золоте, артефактах и опыте. Имеет врождённую способность, которая позволяет ему получать больше золота с убийства крипов и рун богатства. Поскольку его ультимейт уменьшает базовое время атаки, на него хорошо смотряться артефакты, которые дают ему скорость атаки, такие как:"Moon Shard, Assault Cuirass, Butterfly". Assault cuirass особенно хороша, ведь она даёт алхимику всё, что ему нужно, а именно скорость атаки и урон(урон потому что аура от Assault cuirass уменьшает броню врагам и вражеским постройкам)';
 }
 
-for(let element of document.getElementsByClassName('hero_intelegense'))
-  element.onclick = function(){
-    detail_img.src = this.src;
-    full_hero.classList.add('full_hero_visible');
+function uploadHeroItems (hero_name) {
+
+  if (hero_name == 'ALCHEMIST') {
+    var recomendetItemsDiv = document.getElementById("recomendet_items");
+
+    var imageSources = [
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
+    ];
+
+    for (var i = 0; i < imageSources.length; i++) {
+        var newImage = document.createElement("img");
+        newImage.src = imageSources[i];
+        newImage.alt = "Image " + (i + 1);
+        newImage.id = "a";
+        recomendetItemsDiv.appendChild(newImage);
+    }
+  }
 }
 
-for(let element of document.getElementsByClassName('hero_universal'))
-  element.onclick = function(){
-    detail_img.src = this.src;
-    full_hero.classList.add('full_hero_visible');
-}
+
 
 function back(){
   $('full_hero').classList.add('full_hero_invisible');
   $('full_hero').classList.remove('full_hero_visible');
 }
 
-let heroStrengths = document.querySelectorAll('.hero_strength');
-let heroAgility = document.querySelectorAll('.hero_agility');
-let heroIntelegense = document.querySelectorAll('.hero_intelegense');
-let heroUniversal = document.querySelectorAll('.hero_universal');
 
-heroStrengths.forEach(function(heroStrength) {
-  heroStrength.addEventListener('click', function() {
-    $('hero_name').innerText = heroStrength.nextElementSibling.innerText;
-  });
-});
-
-heroAgility.forEach(function(heroAgility) {
-  heroAgility.addEventListener('click', function() {
-    $('hero_name').innerText = heroAgility.nextElementSibling.innerText;
-  });
-});
-
-heroIntelegense.forEach(function(heroIntelegense) {
-  heroIntelegense.addEventListener('click', function() {
-    $('hero_name').innerText = heroIntelegense.nextElementSibling.innerText;
-  });
-});
-
-heroUniversal.forEach(function(heroUniversal) {
-  heroUniversal.addEventListener('click', function() {
-    $('hero_name').innerText = heroUniversal.nextElementSibling.innerText;
-  });
-});
-
-function addTextToDescription() {
-  var heroDescription = document.getElementById("hero_description");
-  heroDescription.innerHTML = 'Алхимик - герой 1 позиции, который выигрывает за счёт перевеса в золоте, артефактах и опыте. Имеет врождённую способность, которая позволяет ему получать больше золота с убийства крипов и рун богатства. Поскольку его ультимейт уменьшает базовое время атаки, на него хорошо смотряться артефакты, которые дают ему скорость атаки, такие как:"Moon Shard, Assault Cuirass, Butterfly". Assault cuirass особенно хороша, ведь она даёт алхимику всё, что ему нужно, а именно скорость атаки и урон(урон потому что аура от Assault cuirass уменьшает броню врагам и вражеским постройкам)';
-}
 
 function addRecommendedItems() {
   var recomendetItemsDiv = document.getElementById("recomendet_items");
@@ -326,6 +324,11 @@ function addRecommendedItems106() {
       newImage.id = "a";
       recomendetItemsDiv.appendChild(newImage);
   }
+}
+
+$('back').onclick = function() {
+  back();
+  clearContent();
 }
 
 function clearContent() {
