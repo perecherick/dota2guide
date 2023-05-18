@@ -146,14 +146,107 @@ function addRecommendedItems2() {
   }
 }
 
+function addTextToDescription10() {
+  var heroDescription = document.getElementById("hero_description");
+  heroDescription.innerHTML = 'Шейкер(Earthshaker) - герой как и поддержки, так может быть и мидером. Герой иннициации, который так-же может разделить противников друг от друга. 1 способность создаёт разлом, который блокирует проход всем. Если вы купите аганим шард, вы сможете ходить по этому разлому. 2 Способность усилит вашу следующую атаку. 3 пассивная способность оглушит всех врагом в небольшом радиусе, когда вы примените одну из способностей. Ультимативная способность наносит урон в большом радиусе в зависимости от того, сколько существ было в радиусе ультимейта. Хорошо смотрится против героев, которые либо создают иллюзии, либо героев, которые призывают своих существ.';
+}
+
+function addRecommendedItems10() {
+  var recomendetItemsDiv = document.getElementById("recomendet_items");
+
+  var imageSources = [
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/force_staff.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/refresher.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/greater_crit.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/invis_sword.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/silver_edge.png"
+  ];
+
+  for (var i = 0; i < imageSources.length; i++) {
+      var newImage = document.createElement("img");
+      newImage.src = imageSources[i];
+      newImage.alt = "Image " + (i + 1);
+      newImage.id = "a";
+      recomendetItemsDiv.appendChild(newImage);
+  }
+}
+
+function addTextToDescription49() {
+  var heroDescription = document.getElementById("hero_description");
+  heroDescription.innerHTML = 'Фантомка(Phantom assasin) - кор герой с ближним типом атаки, который зависит от предметов. Легко может убивать саппортов без предметов на защиту. Её основная цель - быстро найти и так-же быстро убить цель в средине игры. Есть 2 стиля игры: 1 это делать больше упор на убийстве крипов, а 2 - делать упор на убийства врагов. 1 способность, кинжал, позволяет нанести урон на расстоянии и замедлить цель. Урон зависит от урона атак героя. 2 способность позволяет "прыгнуть на врага", получая доп. скорость атаки и ванпиризм от атак. 3 способность позволяет уклонится от атак пассивно, и при активации стать невидимым. Невидимость расскрывается от вражескив героев, вражеских зданий и рошана. Нельзя увидеть даже если поставить sentry ward. Ультимейт - пассивная способность, которая позволяет герою нанести критический урон при атаке.';
+}
+
+function addRecommendedItems49() {
+  var recomendetItemsDiv = document.getElementById("recomendet_items");
+
+  var imageSources = [
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/desolator.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/basher.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/moon_shard.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
+  ];
+
+  for (var i = 0; i < imageSources.length; i++) {
+      var newImage = document.createElement("img");
+      newImage.src = imageSources[i];
+      newImage.alt = "Image " + (i + 1);
+      newImage.id = "a";
+      recomendetItemsDiv.appendChild(newImage);
+  }
+}
+
+function addTextToDescription69() {
+  var heroDescription = document.getElementById("hero_description");
+  heroDescription.innerHTML = 'Инвокер - мидер, один из сложнейших героев в доте. Имеет больше всего способностей в игре. Имеет 3 сферы, и может призвать эти 3 сферы. Сферы могут быть одинаковыми и каждый будет давать вам бонусы. 1 способность - Quas. Сфера, которая за каждый уровень прокачки даёт +2 к силе, когда сфера актина даёт доп. к регенирации хп. 2 способность - Wex. за каждый уровень прокачки даёт +2 к ловкости. Когда сфера активна даёт бонус к скорости передвижения. 3 способность - Exort. Даёт +2 к интеллекту за каждый уровень способности. Когда сфера активна даёт доп. урон от атак. Ультимейт при нажатии дарует новую способность, в зависимости от того, какие сферы сейчас активны. Всего есть 10 способностей. Есть 2 основных стиля игры: через 1 и 2 способности или через 3 способность. Играть через 1 и 2 способности требует большей концентрации.';
+}
+
+function addRecommendedItems69() {
+  var recomendetItemsDiv = document.getElementById("recomendet_items");
+  
+  var imageSources = [
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/witch_blade.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orchid.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sheepstick.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/refresher.png",
+
+  ];
+  
+  for (var i = 0; i < imageSources.length; i++) {
+    var newImage = document.createElement("img");
+    newImage.src = imageSources[i];
+    newImage.alt = "Image " + (i + 1);
+    newImage.id = "a";
+    recomendetItemsDiv.appendChild(newImage);
+  }
+}
+
 function addTextToDescription79() {
-var heroDescription = document.getElementById("hero_description");
+  var heroDescription = document.getElementById("hero_description");
   heroDescription.innerHTML = 'Оракл - герой поддержки, который хилит своих союзников. 1 способность снимает негативные эффекты с союзников и положительные эффекты с врагов, накладывая оцепенение в радиусе(оцепенение не действует на союзников). 2 способность даёт союзникам 100% сопротивлении магии, а врагам запрещает атаковать. 3 способность наносит урон, и постепенно восстанавливает здоровье, примечание: суммарное восстановление здоровья больше, чем нанесённый им урон, так что используйте на врагов всегда в комбинации с 1 способностью. Ультимейт откладывает любой урон и любое лечение на 7/8.5/10 секунд в зависимости от уровня ультимейта. Спустя это время оно нанесёт урон, но восстановит здоровье вдвое больше, чем это было-бы без применения ультимейта. Так-же развеивает негативные эффекты. ';
 }
 
 function addRecommendedItems79() {
   var recomendetItemsDiv = document.getElementById("recomendet_items");
-
+  
   var imageSources = [
     "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/urn_of_shadows.png",
     "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/holy_locket.png",
@@ -166,6 +259,33 @@ function addRecommendedItems79() {
     "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/force_staff.png",
     "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
     "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/guardian_greaves.png"
+  ];
+  
+  for (var i = 0; i < imageSources.length; i++) {
+    var newImage = document.createElement("img");
+    newImage.src = imageSources[i];
+    newImage.alt = "Image " + (i + 1);
+    newImage.id = "a";
+    recomendetItemsDiv.appendChild(newImage);
+  }
+}
+
+function addTextToDescription84() {
+var heroDescription = document.getElementById("hero_description");
+  heroDescription.innerHTML = 'Рубик - герой поддержки, сила которого зависит от противников, а точнее от их способностей. Сборка может менятся в зависимости от героев врага. 1 способность позволяет поднять врага и бросить через определённое время в выбранную точку. Враги в небольшом радиусе так-же получат оглушение от приземление союзника. 2 способность наносит урон и уменьшает урон от атак у цели и врагов, на которых перескочила эта способность. 3 способность пассивно увеличивает дальность применения заклинаний и урон от заклинаний. Ультимейт позволяет украсть последнюю применённую способность врага. Некоторые способности врага невозможно украсть.';
+}
+
+function addRecommendedItems84() {
+  var recomendetItemsDiv = document.getElementById("recomendet_items");
+
+  var imageSources = [
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/aether_lens.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ghost.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/force_staff.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png"
   ];
 
   for (var i = 0; i < imageSources.length; i++) {

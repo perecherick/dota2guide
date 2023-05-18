@@ -62,6 +62,7 @@ h1, h3, div{
   width: 256px;
   height: 144px;
   cursor: pointer;
+  float: left;
 }
 
 .a{
