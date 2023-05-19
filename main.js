@@ -76,7 +76,7 @@ function uploadHeroItems (hero_name) {
       img.classList.add("added_items");
       $("recomendet_items").appendChild(img);
   }
-}
+} 
 
 function getItemImageSourcesArray (hero_name) {
 
