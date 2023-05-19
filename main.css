@@ -107,14 +107,14 @@ h1, h3, div{
 }
 
 
-.c, .a, .e, .m, .st, .acs, .sup, .mag, .arm, .w, .art, .recomendet_items img, .added_items {
+.c, .a, .e, .m, .st, .acs, .sup, .mag, .arm, .w, .art, .details img, .added_items {
   width: 79px;
   height: 58px;
   transform: scale(0.9);
   transition: 0.3s;
 }
 
-.c:hover, .a:hover, .recomendet_items img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items{
+.c:hover, .a:hover, .details img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items{
   width: 79px;
   height: 58px;
   transform: scale(1.2);
@@ -176,20 +176,14 @@ html::-webkit-scrollbar {
   position: absolute;
 }
 
-.hero_description{
+.details{
   color: white;
   position: absolute;
   display: block;
   margin: 0 auto;
   top: 25%;
-}
-
-.recomendet_items{
-  position: absolute;
-  display: block;
-  margin: 0 auto;
-  width: auto;
-  top: 51%;
+  font-weight:bolder;
+  font-size: 24px;
 }
 
 .name{
