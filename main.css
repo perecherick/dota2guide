@@ -58,16 +58,11 @@ h1, h3, div{
   color: white;
 }
 
-.hero_strength, .hero_agility, .hero_intelegense, .hero_universal{
+.hero{   
   width: 256px;
   height: 144px;
   cursor: pointer;
   float: left;
-}
-
-.a{
-  width: 256px;
-  height: 144px;
 }
 
 .info{
@@ -112,14 +107,14 @@ h1, h3, div{
 }
 
 
-#c, #a, #e, #m, #st, #acs, #sup, #mag, #arm, #w, #art, #recomendet_items img {
+.c, .a, .e, .m, .st, .acs, .sup, .mag, .arm, .w, .art, .recomendet_items img, .added_items {
   width: 79px;
   height: 58px;
   transform: scale(0.9);
   transition: 0.3s;
 }
 
-#c:hover, #a:hover, #recomendet_items img:hover, #e:hover, #m:hover, #st:hover, #acs:hover, #sup:hover, #mag:hover, #arm:hover, #w:hover, #art:hover{
+.c:hover, .a:hover, .recomendet_items img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items{
   width: 79px;
   height: 58px;
   transform: scale(1.2);
