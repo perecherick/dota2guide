@@ -11,44 +11,6 @@ h2{
   user-select: none;
 }
 
-.full_hero_invisible{
-  transition-duration: .3s;
-	position: fixed;
-	top: 0;
-	z-index: 100;
-	width: 100vw;
-	height: 100vh;
-	display: none;
-}
-
-.full_hero_visible{
-  transition-duration: .3s;
-	position: fixed;
-	top: 0;
-	z-index: 100;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-  background-color: #27262e;
-  justify-content: center;
-}
-
-.detail{
-  width: 256px;
-  height: 144px;
-}
-
-.back{
-  border: none;
-  width: 150px;
-  height: 50px;
-  background-color: #212121;
-  color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 h1, h3{
   padding: 5px;
 }
@@ -168,28 +130,58 @@ html::-webkit-scrollbar {
   cursor: pointer;
 }
 
+
+
+.full_hero_invisible{
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+  gap: 10px;
+
+	position: fixed;
+	display: none;
+  align-items: center;
+  flex-direction: column;
+
+	z-index: 100;
+  transition-duration: .3s;
+}
+
+.full_hero_visible{
+	position: fixed;
+	display: flex;
+  background-color: #27262e;
+}
+
+.back{
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #212121;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.detail{
+  width: 256px;
+  height: 144px;
+}
+
 .hero_name{
   color: white;
-  display: block;
-  padding-top: 150px;
-  display: flex;
-  position: absolute;
 }
 
 .hero_description{
   color: white;
-  position: absolute;
   display: block;
   margin: 0 auto;
-  top: 25%;
 }
 
 .recomendet_items{
-  position: absolute;
   display: block;
   margin: 0 auto;
-  width: auto;
-  top: 51%;
 }
 
 .name{
