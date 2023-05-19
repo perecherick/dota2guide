@@ -111,14 +111,15 @@ h1, h3, div{
   flex-wrap: wrap;
 }
 
-#c, #a, #e, #m, #st, #acs, #sup, #mag, #arm, #w, #art{
+
+#c, #a, #e, #m, #st, #acs, #sup, #mag, #arm, #w, #art, #recomendet_items img {
   width: 79px;
   height: 58px;
   transform: scale(0.9);
   transition: 0.3s;
 }
 
-#c:hover, #a:hover, #e:hover, #m:hover, #st:hover, #acs:hover, #sup:hover, #mag:hover, #arm:hover, #w:hover, #art:hover{
+#c:hover, #a:hover, #recomendet_items img:hover, #e:hover, #m:hover, #st:hover, #acs:hover, #sup:hover, #mag:hover, #arm:hover, #w:hover, #art:hover{
   width: 79px;
   height: 58px;
   transform: scale(1.2);

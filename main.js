@@ -47,50 +47,26 @@ function uploadHeroDescription (hero_name) {
 
   if (hero_name == 'ALCHEMIST')
     $("hero_description").innerHTML = 'Алхимик - герой 1 позиции, который выигрывает за счёт перевеса в золоте, артефактах и опыте. Имеет врождённую способность, которая позволяет ему получать больше золота с убийства крипов и рун богатства. Поскольку его ультимейт уменьшает базовое время атаки, на него хорошо смотряться артефакты, которые дают ему скорость атаки, такие как:"Moon Shard, Assault Cuirass, Butterfly". Assault cuirass особенно хороша, ведь она даёт алхимику всё, что ему нужно, а именно скорость атаки и урон(урон потому что аура от Assault cuirass уменьшает броню врагам и вражеским постройкам)';
+  else if (hero_name == 'sfsfs')
+    $("hero_description").innerHTML = 'Алхимик - герой 1 позиции, который выигрывает за счёт перевеса в золоте, артефактах и опыте. Имеет врождённую способность, которая позволяет ему получать больше золота с убийства крипов и рун богатства. Поскольку его ультимейт уменьшает базовое время атаки, на него хорошо смотряться артефакты, которые дают ему скорость атаки, такие как:"Moon Shard, Assault Cuirass, Butterfly". Assault cuirass особенно хороша, ведь она даёт алхимику всё, что ему нужно, а именно скорость атаки и урон(урон потому что аура от Assault cuirass уменьшает броню врагам и вражеским постройкам)';
 }
 
 function uploadHeroItems (hero_name) {
+  let imageSources = getItemImageSourcesArray(hero_name);
 
-  if (hero_name == 'ALCHEMIST') {
-    var recomendetItemsDiv = document.getElementById("recomendet_items");
+  for (let i = 0; i < imageSources.length; i++) {
 
-    var imageSources = [
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
-    ];
-
-    for (var i = 0; i < imageSources.length; i++) {
-        var newImage = document.createElement("img");
-        newImage.src = imageSources[i];
-        newImage.alt = "Image " + (i + 1);
-        newImage.id = "a";
-        recomendetItemsDiv.appendChild(newImage);
-    }
+      let img = document.createElement("img");
+      img.src = imageSources[i];
+      img.alt = `Image ${i + 1}`;
+      $("recomendet_items").appendChild(img);
   }
 }
 
+function getItemImageSourcesArray (hero_name) {
 
-
-function back(){
-  $('full_hero').classList.add('full_hero_invisible');
-  $('full_hero').classList.remove('full_hero_visible');
-}
-
-
-
-function addRecommendedItems() {
-  var recomendetItemsDiv = document.getElementById("recomendet_items");
-
-  var imageSources = [
+  if (hero_name == 'ALCHEMIST')
+    return [
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
@@ -102,16 +78,34 @@ function addRecommendedItems() {
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
-  ];
-
-  for (var i = 0; i < imageSources.length; i++) {
-      var newImage = document.createElement("img");
-      newImage.src = imageSources[i];
-      newImage.alt = "Image " + (i + 1);
-      newImage.id = "a";
-      recomendetItemsDiv.appendChild(newImage);
-  }
+    ];
+  else if (hero_name == 'scafa')
+    return [
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bfury.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/assault.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/monkey_king_bar.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
+    ];
+  else return [];
 }
+
+
+
+
+
+function back(){
+  $('full_hero').classList.add('full_hero_invisible');
+  $('full_hero').classList.remove('full_hero_visible');
+}
+
+
 
 function addTextToDescription2() {
   var heroDescription = document.getElementById("hero_description");
