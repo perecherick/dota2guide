@@ -73,6 +73,8 @@ function uploadHeroDescription (hero_name) {
     $("hero_description").innerHTML = 'Висп - герой поддержки, который связывается с союзником, лечит и усиливает его. 1 способность позволяет ускорить вас и союзника в связке, так-же вы будете передватать всё восстановленное вами хп и ману союзника. 2 способность поможет вам фармить и наносить урон врагам. 3 способность ускоряет вашу скорость атаки и скорость атаки союзника, а так-же даёт доп. урон от заклинаний. Ультимейт позволяет вам и связанному с вами союзником переместиться на любую точку карты с задержкой. Спустя 12 секунд вы возвращаетесь на начальную точку.';
   else if (hero_name == 'MIRANA')
     $("hero_description").innerHTML = 'Мирана - герой поддержки, который ходит по всем линиям, помогая убить противников. 1 способность призывает звёзды, которые падают на всех существ в большом радиусе вокруг Мираны, а существу, который был ближе всего к Миране, упадёт 2 звезды. 2 способность - стрела. Мирана выпускает большую стрелу, которая если попадёт в крипа, сразу убьёт его(не убивает древних крипов, рошана и существ по типу медведя Lone Druid, големов Warlock и т.д.). При попадании во врага наносит урон и оглушает в зависимости от дальности полёта стрелы. 3 способность позволяет миране быстро переместится на небольшое расстояние и перепрыгнуть возвышенности. При покупке aghanims shard даёт 1 дополнительный заряд к 3 способности. Ультимейт делает союзных героев невидимыми, что позволяет как и спасти союзника, так и неожиданно на врагов.';
+  else if (hero_name == 'WINDRANGER')
+    $("hero_description").innerHTML = 'Врка - мид герой. Быстро убивает нужную цель в драке. Сильна на ранней стадии за счёт 2 способности, а в средине или лейт стадии игры из-за своего ультимейта. 1 способность позволяет оглушить цель на короткий промежуток, если рядом не было дерева или вражеского существа/героя, если же рядом был кто-то, оглушится не только цель, но и тот, кто стоял позади цели. 2 способность выпускает стрелу после короткой подготовки, которая наносит много урона и проходит сквозь других существ. Проходя через каждое существо уменьшает урон. 3 способность ускоряет героя и позволяет уклонятся от всех атак героев. Ультимейт позволяет атаковать выбраную цель с сильно увеличенной скоростью атаки, но теряя урон';
 }
 
 function uploadHeroItems (hero_name) {
@@ -289,6 +291,23 @@ function getItemImageSourcesArray (hero_name) {
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ghost.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sheepstick.png"
+    ]
+  else if (hero_name == 'WINDRANGER')
+    return [
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/maelstrom_lg.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dragon_lance.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/greater_crit.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/desolator.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gungir.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hurricane_pike.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/sphere.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
+    "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
     ]
   else return [];
 }
