@@ -3,8 +3,20 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "reaver";
+  src: url("radiance-ultralight.otf");
+  font-weight: 100;
+}
+
+p{
+  font-size: 1.5rem;
+  padding-inline: 3rem;
+}
+
 body{
   background-color: #27262e;
+  font-family: "reaver";
 }
 
 h2{
@@ -50,33 +62,33 @@ h1, h3, div{
   justify-content: space-evenly;
 }
 
-#consumables, #accessories, #miscellaneous, #armor{
+#consumables, #accessories, #miscellaneous, #armor, #tier1, #tier4{
   width: 25%;
   display: inline-block;
   flex-wrap: wrap;
 }
 
-#atributes, #secret_shop, #support, #weapons{
+#atributes, #secret_shop, #support, #weapons, #tier2, #tier5{
   width: 25%; 
   display: inline-block;
   flex-wrap: wrap;
 }
 
-#equipment, #magical, #artifacts{
+#equipment, #magical, #artifacts, #tier3{
   width: 25%;
   display: inline-block;
   flex-wrap: wrap;
 }
 
 
-.c, .a, .e, .m, .st, .acs, .sup, .mag, .arm, .w, .art, .recomendet_items img, .added_items {
+.c, .a, .e, .m, .st, .acs, .sup, .mag, .arm, .w, .art, .recomended_items img, .added_items, .ne{
   width: 79px;
   height: 58px;
   transform: scale(0.9);
   transition: 0.3s;
 }
 
-.c:hover, .a:hover, .recomendet_items img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items{
+.c:hover, .a:hover, .recomended_items img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items, .ne:hover{
   width: 79px;
   height: 58px;
   transform: scale(1.2);
@@ -91,8 +103,13 @@ h1, h3, div{
   display: none;
 }
 
-html::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  width: 0px;  
+}
+
+html {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 .high_z {
@@ -138,7 +155,6 @@ html::-webkit-scrollbar {
 
 	position: fixed;
 	display: none;
-  align-items: center;
   flex-direction: column;
 
 	z-index: 100;
@@ -149,6 +165,8 @@ html::-webkit-scrollbar {
 	position: fixed;
 	display: flex;
   background-color: #27262e;
+  overflow-y: scroll;
+  scrollbar-width: 0;
 }
 
 .back{
@@ -165,6 +183,7 @@ html::-webkit-scrollbar {
 .detail{
   width: 256px;
   height: 144px;
+  align-self: center;
 }
 
 .hero_name{
@@ -177,9 +196,44 @@ html::-webkit-scrollbar {
   margin: 0 auto;
 }
 
-.recomendet_items{
-  display: block;
-  margin: 0 auto;
+.recomended_items{
+  display: grid;
+  grid-template-areas: 
+  "start end"
+  "early situation"
+  "mid neutral";
+  column-gap: 15%;
+  row-gap: 0.3rem;
+  justify-content: center;
+}
+
+.hero_item_container{
+  justify-content: center;
+  max-width: 50vw;
+}
+
+.start{
+  grid-area: start;
+}
+
+.early{
+  grid-area: early;
+}
+
+.mid{
+  grid-area: mid;
+}
+
+.end{
+  grid-area: end;
+}
+
+.situation{
+  grid-area: situation;
+}
+
+.neutral{
+  grid-area: neutral;
 }
 
 .name{
