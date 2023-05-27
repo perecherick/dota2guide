@@ -11,15 +11,15 @@ function change() {
       hero.classList.add('low_z');
       item.classList.remove('low_z');
       item.classList.add('high_z');
-      document.getElementById("allheroes").style.display="none";
-      document.getElementById("allitems").style.display="block";
+      $("allheroes").style.display="none";
+      $("allitems").style.display="block";
     } else {
       hero.classList.remove('low_z');
       hero.classList.add('high_z');
       item.classList.remove('high_z');
       item.classList.add('low_z');
-      document.getElementById("allheroes").style.display="block";
-      document.getElementById("allitems").style.display="none";
+      $("allheroes").style.display="block";
+      $("allitems").style.display="none";
   }
 }
 
