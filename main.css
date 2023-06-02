@@ -88,7 +88,7 @@ h1, h3, div{
   transition: 0.3s;
 }
 
-.c:hover, .a:hover, .recomended_items img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items, .ne:hover{
+.c:hover, .a:hover, .recomended_items img:hover, .e:hover, .m:hover, .st:hover, .acs:hover, .sup:hover, .mag:hover, .arm:hover, .w:hover, .art:hover, .added_items:hover, .ne:hover{
   width: 79px;
   height: 58px;
   transform: scale(1.2);
@@ -207,6 +207,17 @@ html {
   justify-content: center;
 }
 
+.recomended_items_2{
+  display: none;
+  grid-template-areas: 
+  "start end"
+  "early situation"
+  "mid neutral";
+  column-gap: 15%;
+  row-gap: 0.3rem;
+  justify-content: center;
+}
+
 .hero_item_container{
   justify-content: center;
   max-width: 50vw;
@@ -274,3 +285,41 @@ html {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
   z-index: 2;
 }
+
+.change_items { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  background-color: #212121;
+  transition: .2s;
+ }
+  
+ .change_items input { 
+  font-size: 1.2rem; 
+  padding: 9px 13px; 
+  overflow-x: hidden; 
+  text-align: center; 
+  white-space: nowrap; 
+  background: none; 
+  border: none;
+  color: var(--solid-color); 
+  cursor: pointer; 
+  transition: .2s transform, .3s border-color, .3s color, .3s background, .2s color, .2s width, .2s padding; 
+ }
+
+ .change_items:active{
+  background-color: #000000;
+  transition: .2s;
+ }
+  
+ .change_items input:active { 
+  transform: scale(0.95);
+  background-color: #000000;
+ } 
+  
+ .change_items input.active { 
+  background-color: #000000;
+  border-color: var(--primary-color); 
+  color: #fff; 
+  background: var(--primary-color); 
+ }
