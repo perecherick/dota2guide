@@ -1278,16 +1278,16 @@ function getItemImageSourcesArray2 (hero_name) {
   else if (hero_name == 'FACELESS VOID')
     return [
       [
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/slippers.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tango.png"
       ],
       [
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_band.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/maelstrom_lg.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mask_of_madness.png"
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png"
       ],
       [
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
@@ -1298,18 +1298,18 @@ function getItemImageSourcesArray2 (hero_name) {
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/mjollnir_lg.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/satanic.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/refresher.png"
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/silver_edge.png"
       ],
       [
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bloodthorn.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
-        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/greater_crit.png"
+        "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/refresher.png"
       ],
       [
         "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/unstable_wand.png",
@@ -1339,39 +1339,38 @@ function getItemImageSourcesArray2 (hero_name) {
   else if (hero_name == 'JUGGERNAUT')
     return [
     [
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/branches.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/slippers.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/circlet.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/quelling_blade.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tango.png"
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tango.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blood_grenade.png"
     ],
     [
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/maelstrom_lg.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/manta.png"
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png"
     ],
     [
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/basher.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png",
     ],
     [
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/items/mjollnir_lg.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/hoodwink/aghanims_shard.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/swift_blink.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/abyssal_blade.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/butterfly.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/disperser.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/manta.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png"
     ],
     [
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bloodthorn.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/nullifier.png",
-      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png"
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
+      "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/silver_edge.png"
     ],
     [
       "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/unstable_wand.png",
