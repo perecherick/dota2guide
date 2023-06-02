@@ -292,24 +292,26 @@ html {
   align-items: center;
  }
   
- .change_items input { 
+ .change_items button {
+  width: 23ch; 
   color: #ffffff;
-  border: none;
-  background: #212121;
+  border: 1px solid #ffffffb0;
+  background: radial-gradient(#ffffff35 100%, #ffffff00 0%);
+  border-radius: 5px;
   font-size: 1.2rem; 
   padding: 9px 13px; 
   overflow-x: hidden; 
   text-align: center; 
   white-space: nowrap; 
   cursor: pointer; 
-  transition: .2s transform, .3s border-color, .3s color, .3s background, .2s color, .2s width, .2s padding; 
- }
-  
- .change_items input:active { 
+  transition: .2s transform, .3s border-color, .3s background, .2s color, .2s width, .2s padding; 
+}
+
+.change_items button:active { 
   transform: scale(0.95); 
 } 
 
-.change_items input.active { 
-  background: #000000;
-  color: #fff; 
+.change_items button.active { 
+  background: radial-gradient(#ffffff35 -50%, #ffffff00 100%);
+  color: #fff;
  }
