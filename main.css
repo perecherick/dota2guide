@@ -290,36 +290,26 @@ html {
   display: flex; 
   justify-content: center; 
   align-items: center;
-  background-color: #212121;
-  transition: .2s;
  }
   
  .change_items input { 
+  color: #ffffff;
+  border: none;
+  background: #212121;
   font-size: 1.2rem; 
   padding: 9px 13px; 
   overflow-x: hidden; 
   text-align: center; 
   white-space: nowrap; 
-  background: none; 
-  border: none;
-  color: var(--solid-color); 
   cursor: pointer; 
   transition: .2s transform, .3s border-color, .3s color, .3s background, .2s color, .2s width, .2s padding; 
  }
-
- .change_items:active{
-  background-color: #000000;
-  transition: .2s;
- }
   
  .change_items input:active { 
-  transform: scale(0.95);
-  background-color: #000000;
- } 
-  
- .change_items input.active { 
-  background-color: #000000;
-  border-color: var(--primary-color); 
+  transform: scale(0.95); 
+} 
+
+.change_items input.active { 
+  background: #000000;
   color: #fff; 
-  background: var(--primary-color); 
  }

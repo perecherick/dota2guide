@@ -3,8 +3,8 @@ var $=function(id){
 }
 
 $('change_items').onclick = function() { 
- 
   changeChangeScrollButtonStatus(this); 
+  changeHeroItemsSet();
  }
 
  function changeChangeScrollButtonStatus (el) { 
@@ -41,7 +41,7 @@ function change() {
 const detail_img = $('detail');
 const full_hero = $('full_hero');
 
-$('change_items').onclick = function () {
+function changeHeroItemsSet () {
   if(document.getElementsByClassName('recomended_items')[0].style.display == "none"){
     document.getElementsByClassName('recomended_items')[0].style.display = "grid";
     document.getElementsByClassName('recomended_items_2')[0].style.display = "none";
