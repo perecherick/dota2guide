@@ -304,7 +304,7 @@ html {
   text-align: center; 
   white-space: nowrap; 
   cursor: pointer; 
-  transition: .2s transform, .3s border-color, .3s background, .2s color, .2s width, .2s padding; 
+  transition: .2s all; 
 }
 
 .change_items button:active { 
