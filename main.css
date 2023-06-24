@@ -95,6 +95,12 @@ h1, h3, div{
   transition: 0.3s;
 }
 
+.added_skills{
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+}
+
 #allheroes{
   display: block;
 }
