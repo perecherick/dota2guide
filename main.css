@@ -203,7 +203,7 @@ html {
   height: 1.25vh;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
-  top: 1.5vh;
+  top: 2vh;
   left: 50%;
   transform: translateX(-50%);
   position: relative;

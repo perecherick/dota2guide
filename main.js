@@ -2,6 +2,8 @@ var $=function(id){
 	return document.getElementById(id);
 }
 
+const linkStart = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/";
+
 $('change_items').onclick = function() { 
   changeChangeScrollButtonStatus(this); 
   changeHeroItemsSet();
@@ -58,7 +60,7 @@ function uploadHeroSkillBuild (hero_name){ // скилл билд
   let imageSkills = getSkillsImageSourcesArray(hero_name);
   for(let imgsrc of imageSkills)
     $("skill_build").insertAdjacentHTML("beforeend", `
-      <img src="${imgsrc}" class="added_skills">
+      <img src="${linkStart + imgsrc}" class="added_skills">
     `);
 }
 
@@ -87,7 +89,7 @@ function uploadHeroItems (hero_name) {
   for (let a = 0; a < imageSources.length; a++) {
     for(let b = 0; b < imageSources[a].length; b++){
       let img = document.createElement("img");
-      img.src = imageSources[a][b];
+      img.src = linkStart + imageSources[a][b];
       img.classList.add("added_items");
       itemContainers[a].appendChild(img);
     }
@@ -101,7 +103,7 @@ function uploadHeroItems2 (hero_name) {
   for (let a = 0; a < imageSources2.length; a++) {
     for(let b = 0; b < imageSources2[a].length; b++){
       let img = document.createElement("img");
-      img.src = imageSources2[a][b];
+      img.src = linkStart + imageSources2[a][b];
       img.classList.add("added_items");
       itemContainers2[a].appendChild(img);
     }
