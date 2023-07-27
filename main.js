@@ -4366,7 +4366,7 @@ function uploadHeroItems2 (hero_name) {
   }
 } 
 
-$('back').onclick = function() {
+$('drag').onclick = function() {
   var heroDescription = $("hero_description");
   heroDescription.textContent = "";
 
@@ -4382,13 +4382,13 @@ $('back').onclick = function() {
   }
   
   $('full_hero').style.top = "100%"; 
-
   
   $('full_hero').classList.add('full_hero_invisible');
-  setTimeout(()=>{
+
+  setTimeout(() => {
     $('full_hero').classList.remove('full_hero_visible');
     $('full_hero').style.top = "0"; 
-  },300)
+  }, 300);
 }
 
 let fullHero = $('drag');
@@ -4419,7 +4419,7 @@ function stopDragging() {
   divfullHero.classList.add("full_hero_transition");
   
   if (newTop >= Number(divfullHero.clientHeight) * 0.5){
-    $('back').click();
+    $('drag').click();
   } else {
     divfullHero.style.top = "0";
   }
@@ -4453,7 +4453,7 @@ function dragElement(e) {
 
   // Проверяем, если див достиг отметки в 1000 пикселей по y-координате, выполняем функцию back
   if (newTop > Number(divfullHero.clientHeight) - 75) {
-    $('back').click();
+    $('drag').click();
     stopDragging();
   }
   
