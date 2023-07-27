@@ -96,7 +96,7 @@ h1, h3, div{
 }
 
 .added_skills{
-  margin: 5px;
+  margin: 5 px;
   width: 80px;
   height: 80px;
 }
@@ -164,32 +164,66 @@ html {
   flex-direction: column;
 
 	z-index: 100;
-  transition-duration: .3s;
 }
 
 .full_hero_visible{
+  width: 100vw;
+	height: 100vh;
+	top: 0;
+  gap: 10px;
+
 	position: fixed;
+	display: none;
+  flex-direction: column;
+
+	z-index: 100;
+  transition-duration: .3s;
+
+  position: fixed;
 	display: flex;
   background-color: #27262e;
   overflow-y: scroll;
   scrollbar-width: 0;
+  margin-top: 50%;
+  animation: slide 0.5s forwards;
 }
+
+@keyframes slide {
+  from {
+    margin-top: 50%;
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+.drag {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  top: 0%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: grab;
+}
+
 
 .back{
   border: none;
-  width: 150px;
-  height: 50px;
-  background-color: #212121;
-  color: white;
+  width: 0;
+  height: 0;
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 
 .detail{
   width: 256px;
   height: 144px;
   align-self: center;
+  user-select: none;
 }
 
 .hero_name{

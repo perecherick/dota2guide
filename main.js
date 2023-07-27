@@ -4330,6 +4330,7 @@ for (let el of heroes)
     detail_img.src = this.src;
     $('hero_name').innerText = hero_name;
     full_hero.classList.add('full_hero_visible');
+    full_hero.classList.remove('full_hero_invisible');
 
     uploadHeroDescription(hero_name);
     uploadHeroItems(hero_name);
@@ -4380,6 +4381,62 @@ $('back').onclick = function() {
     itemContainers2[j].innerHTML = "";
   }
 
+  $('full_hero').style.top = "0"; 
+
   $('full_hero').classList.add('full_hero_invisible');
   $('full_hero').classList.remove('full_hero_visible');
+}
+
+let fullHero = document.getElementById('full_hero');
+let startY = 0;
+let isDragging = false;
+
+fullHero.addEventListener('mousedown', startDragging);
+fullHero.addEventListener('touchstart', startDragging);
+
+function startDragging(e) {
+  if (e.target.id === 'full_hero' && !fullHero.classList.contains('full_hero_invisible')) {
+    isDragging = true;
+    startY = e.clientY || e.touches[0].clientY;
+    fullHero.style.cursor = 'grabbing';
+
+    document.addEventListener('mousemove', dragElement);
+    document.addEventListener('touchmove', dragElement);
+    document.addEventListener('mouseup', stopDragging);
+    document.addEventListener('touchend', stopDragging);
+  }
+}
+
+function stopDragging() {
+  isDragging = false;
+  fullHero.style.cursor = 'grab';
+
+  // Удаляем обработчики событий, чтобы перестать перетаскивать элемент
+  document.removeEventListener('mousemove', dragElement);
+  document.removeEventListener('touchmove', dragElement);
+  document.removeEventListener('mouseup', stopDragging);
+  document.removeEventListener('touchend', stopDragging);
+}
+
+function dragElement(e) {
+  if (!isDragging) return;
+  const newY = e.clientY || e.touches[0].clientY;
+  const deltaY = newY - startY;
+  const currentTop = parseInt(window.getComputedStyle(fullHero).top, 10);
+  const newTop = currentTop + deltaY;
+
+  // Проверяем, если новая позиция y меньше нуля, устанавливаем y-координату равной нулю
+  if (newTop < 0) {
+    fullHero.style.top = "0";
+  } else {
+    fullHero.style.top = newTop + "px";
+  }
+
+  // Проверяем, если див достиг отметки в 1000 пикселей по y-координате, выполняем функцию back
+  if (newTop > 650) {
+    $('back').click();
+  }
+
+  // Используем preventDefault(), чтобы предотвратить прокрутку страницы при касании на мобильных устройствах
+  e.preventDefault();
 }
