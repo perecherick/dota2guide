@@ -4380,26 +4380,31 @@ $('back').onclick = function() {
   for(let j = 0; j < itemContainers2.length; j++){
     itemContainers2[j].innerHTML = "";
   }
+  
+  $('full_hero').style.top = "100%"; 
 
-  $('full_hero').style.top = "0"; 
-
+  
   $('full_hero').classList.add('full_hero_invisible');
-  $('full_hero').classList.remove('full_hero_visible');
+  setTimeout(()=>{
+    $('full_hero').classList.remove('full_hero_visible');
+    $('full_hero').style.top = "0"; 
+  },300)
 }
 
-let fullHero = document.getElementById('full_hero');
-let startY = 0;
+let fullHero = $('drag');
+let divfullHero = $('full_hero');
+let startY = 15;
 let isDragging = false;
+let newTop = 0;
 
 fullHero.addEventListener('mousedown', startDragging);
 fullHero.addEventListener('touchstart', startDragging);
 
 function startDragging(e) {
-  if (e.target.id === 'full_hero' && !fullHero.classList.contains('full_hero_invisible')) {
+  if (e.target.id === 'drag') {
     isDragging = true;
     startY = e.clientY || e.touches[0].clientY;
     fullHero.style.cursor = 'grabbing';
-
     document.addEventListener('mousemove', dragElement);
     document.addEventListener('touchmove', dragElement);
     document.addEventListener('mouseup', stopDragging);
@@ -4407,36 +4412,57 @@ function startDragging(e) {
   }
 }
 
+
 function stopDragging() {
   isDragging = false;
   fullHero.style.cursor = 'grab';
-
+  divfullHero.classList.add("full_hero_transition");
+  
+  if (newTop >= Number(divfullHero.clientHeight) * 0.5){
+    $('back').click();
+  } else {
+    divfullHero.style.top = "0";
+  }
+  
   // Удаляем обработчики событий, чтобы перестать перетаскивать элемент
   document.removeEventListener('mousemove', dragElement);
   document.removeEventListener('touchmove', dragElement);
   document.removeEventListener('mouseup', stopDragging);
   document.removeEventListener('touchend', stopDragging);
+  setTimeout(()=>{
+    divfullHero.classList.remove("full_hero_transition");
+  },300);
 }
 
 function dragElement(e) {
   if (!isDragging) return;
-  const newY = e.clientY || e.touches[0].clientY;
+  let newY = 0;
+  if(isMobileDevice()) newY = e.touches[0].clientY;
+  else newY = e.clientY;
   const deltaY = newY - startY;
   const currentTop = parseInt(window.getComputedStyle(fullHero).top, 10);
-  const newTop = currentTop + deltaY;
+  newTop = currentTop + deltaY;
 
   // Проверяем, если новая позиция y меньше нуля, устанавливаем y-координату равной нулю
+//  console.log(newY); 
   if (newTop < 0) {
-    fullHero.style.top = "0";
+    divfullHero.style.top = "0";
   } else {
-    fullHero.style.top = newTop + "px";
+    divfullHero.style.top = newTop + "px";
   }
 
   // Проверяем, если див достиг отметки в 1000 пикселей по y-координате, выполняем функцию back
-  if (newTop > 650) {
+  if (newTop > Number(divfullHero.clientHeight) - 75) {
     $('back').click();
+    stopDragging();
   }
+  
 
   // Используем preventDefault(), чтобы предотвратить прокрутку страницы при касании на мобильных устройствах
-  e.preventDefault();
+  e.preventDefault();  
+}
+
+// Проверяем, если пользователь зашел с мобильного устройства
+function isMobileDevice() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }

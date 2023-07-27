@@ -153,6 +153,10 @@ html {
   cursor: pointer;
 }
 
+.full_hero_transition{
+  transition: 0.3s top;
+}
+
 .full_hero_invisible{
 	width: 100vw;
 	height: 100vh;
@@ -177,7 +181,6 @@ html {
   flex-direction: column;
 
 	z-index: 100;
-  transition-duration: .3s;
 
   position: fixed;
 	display: flex;
@@ -199,13 +202,14 @@ html {
 
 .drag {
   width: 100px;
-  height: 50px;
+  height: 15px;
   background-color: rgb(255, 255, 255);
   top: 0%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
   cursor: grab;
+  margin: 15px;
 }
 
 
@@ -224,6 +228,7 @@ html {
   height: 144px;
   align-self: center;
   user-select: none;
+  padding: 25px;
 }
 
 .hero_name{
