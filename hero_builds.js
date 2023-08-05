@@ -686,10 +686,9 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/wraith_band.png",
           "dota_react/items/power_treads.png",
           "dota_react/items/dragon_lance.png",
-          "dota_react/items/hand_of_midas.png"
+          "dota_react/items/ultimate_scepter.png"
         ],
         [
-          "dota_react/items/ultimate_scepter.png",
           "dota_react/items/manta.png",
           "dota_react/items/hurricane_pike.png",
           "dota_react/items/greater_crit.png"
@@ -2729,7 +2728,7 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/wraith_band.png",
           "dota_react/items/power_treads.png",
           "dota_react/items/dragon_lance.png",
-          "dota_react/items/yasha.png"
+          "dota_react/items/hand_of_midas.png"
         ],
         [
           "dota_react/items/manta.png",
