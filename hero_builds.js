@@ -1,5 +1,4 @@
 function getItemImageSourcesArray (hero_name) {
-
     if (hero_name == 'ALCHEMIST')
       return [
         [
@@ -605,6 +604,92 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/book_of_shadows.png",
         ]
       ]
+    else if(hero_name == 'SPIRIT BREAKER')
+      return[
+        [
+          "dota_react/items/tango.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/ward_sentry.png",
+          "dota_react/items/blood_grenade.png",
+          "dota_react/items/wind_lace.png"
+        ],
+        [
+          "dota_react/items/phase_boots.png",
+          "dota_react/items/ancient_janggo.png",
+          "dota_react/items/invis_sword.png"
+        ],
+        [
+          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/silver_edge.png"
+        ],
+        [
+          "dota_react/items/phase_boots.png",
+          "dota_react/items/boots_of_bearing.png",
+          "dota_react/items/silver_edge.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/ultimate_scepter.png",
+          "hoodwink/aghanims_shard.png",
+          "dota_react/items/kaya_and_sange.png",
+          "items/heavens_halberd_lg.png"
+        ],
+        [
+          "dota_react/items/cyclone.png",
+          "dota_react/items/wind_waker.png",
+          "dota_react/items/assault.png",
+          "dota_react/items/heart.png",
+          "dota_react/items/lotus_orb.png",
+          "dota_react/items/pavise.png",
+          "dota_react/items/shivas_guard.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/solar_crest.png",
+          "dota_react/items/spirit_vessel.png"
+        ],
+        [
+          "dota_react/items/trusty_shovel.png",
+          "dota_react/items/mysterious_hat.png",
+          "dota_react/items/unstable_wand.png",
+          "dota_react/items/pogo_stick.png",
+          "dota_react/items/occult_bracelet.png",
+          "dota_react/items/broom_handle.png",
+          "dota_react/items/faded_broach.png",
+          "dota_react/items/dragon_scale.png",
+          "dota_react/items/pupils_gift.png",
+          "dota_react/items/vambrace.png",
+          "dota_react/items/bullwhip.png",
+          "dota_react/items/orb_of_destruction.png",
+          "dota_react/items/vampire_fangs.png",
+          "dota_react/items/gossamer_cape.png",
+          "dota_react/items/quickening_charm.png",
+          "dota_react/items/defiant_shell.png",
+          "dota_react/items/paladin_sword.png",
+          "dota_react/items/vindicators_axe.png",
+          "dota_react/items/dandelion_amulet.png",
+          "dota_react/items/titan_sliver.png",
+          "dota_react/items/cloak_of_flames.png",
+          "dota_react/items/ceremonial_robe.png",
+          "dota_react/items/ogre_seal_totem.png",
+          "dota_react/items/timeless_relic.png",
+          "dota_react/items/spell_prism.png",
+          "dota_react/items/ascetic_cap.png",
+          "dota_react/items/ninja_gear.png",
+          "dota_react/items/trickster_cloak.png",
+          "dota_react/items/stormcrafter.png",
+          "dota_react/items/penta_edged_sword.png",
+          "dota_react/items/havoc_hammer.png",
+          "dota_react/items/mind_breaker.png",
+          "dota_react/items/martyrs_plate.png",
+          "dota_react/items/force_boots.png",
+          "dota_react/items/mirror_shield.png",
+          "dota_react/items/demonicon.png",
+          "dota_react/items/fallen_sky.png",
+          "dota_react/items/force_field.png",
+          "dota_react/items/ex_machina.png",
+          "dota_react/items/giants_ring.png",
+          "dota_react/items/book_of_shadows.png"
+        ]
+      ]
     else if(hero_name == 'TIDEHUNTER')
       return[
         [
@@ -1079,7 +1164,6 @@ function getItemImageSourcesArray (hero_name) {
         ],
         [
           "dota_react/items/manta.png",
-          "dota_react/items/ultimate_scepter.png",
           "dota_react/items/satanic.png",
           "dota_react/items/greater_crit.png"
         ],
@@ -1087,7 +1171,6 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/swift_blink.png",
           "dota_react/items/sphere.png",
           "dota_react/items/manta.png",
-          "dota_react/items/ultimate_scepter.png",
           "dota_react/items/satanic.png",
           "dota_react/items/greater_crit.png",
           "dota_react/items/skadi.png"
@@ -1370,67 +1453,91 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/giants_ring.png"
         ]
       ]
-    else if (hero_name == 'INVOKER')
-      return [
+    else if(hero_name == "ENCHANTRESS")
+      return[
         [
-          "dota_react/items/branches.png",
-          "dota_react/items/branches.png",
           "dota_react/items/faerie_fire.png",
+          "dota_react/items/blood_grenade.png",
+          "dota_react/items/ward_sentry.png",
           "dota_react/items/tango.png",
-          "dota_react/items/mantle.png",
-          "dota_react/items/circlet.png"
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png"
         ],
         [
-          "dota_react/items/null_talisman.png",
-          "dota_react/items/hand_of_midas.png",
-          "dota_react/items/boots.png",
-          "dota_react/items/wind_lace.png"
+          "dota_react/items/power_treads.png",
+          "dota_react/items/hurricane_pike.png",
+          "dota_react/items/witch_blade.png"
         ],
         [
-          "dota_react/items/blink.png",
+          "hoodwink/aghanims_shard.png",
+          "dota_react/items/sheepstick.png",
           "dota_react/items/black_king_bar.png",
-          "dota_react/items/octarine_core.png",
-          "dota_react/items/refresher.png"
+          "dota_react/items/mage_slayer.png"
         ],
         [
-          "dota_react/items/travel_boots.png",
-          "items/overwhelming_blink_lg.png",
+          "dota_react/items/power_treads.png",
+          "dota_react/items/hurricane_pike.png",
+          "dota_react/items/revenants_brooch.png",
+          "dota_react/items/sheepstick.png",
           "dota_react/items/black_king_bar.png",
-          "dota_react/items/octarine_core.png",
-          "dota_react/items/refresher.png",
-          "dota_react/items/sheepstick.png"
+          "hoodwink/aghanims_shard.png",
+          "dota_react/items/bloodthorn.png"
         ],
         [
-          "dota_react/items/sphere.png",
-          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/ghost.png",
           "dota_react/items/shivas_guard.png",
-          "dota_react/items/force_staff.png",
-          "dota_react/items/kaya_and_sange.png"
+          "dota_react/items/bloodstone.png",
+          "dota_react/items/monkey_king_bar.png",
+          "dota_react/items/glimmer_cape.png",
+          "dota_react/items/ultimate_scepter.png"
         ],
         [
           "dota_react/items/trusty_shovel.png",
           "dota_react/items/arcane_ring.png",
+          "dota_react/items/mysterious_hat.png",
           "dota_react/items/unstable_wand.png",
           "dota_react/items/pogo_stick.png",
+          "dota_react/items/lance_of_pursuit.png",
           "dota_react/items/occult_bracelet.png",
+          "dota_react/items/duelist_gloves.png",
           "dota_react/items/faded_broach.png",
+          "dota_react/items/spark_of_courage.png",
+          "dota_react/items/ring_of_aquila.png",
           "dota_react/items/pupils_gift.png",
           "dota_react/items/vambrace.png",
           "dota_react/items/grove_bow.png",
-          "dota_react/items/quickening_charm.png",
+          "dota_react/items/philosophers_stone.png",
+          "dota_react/items/bullwhip.png",
+          "dota_react/items/orb_of_destruction.png",
+          "dota_react/items/specialists_array.png",
+          "dota_react/items/vampire_fangs.png",
+          "dota_react/items/gossamer_cape.png",
+          "dota_react/items/defiant_shell.png",
+          "dota_react/items/paladin_sword.png",
+          "dota_react/items/vindicators_axe.png",
           "dota_react/items/dandelion_amulet.png",
           "dota_react/items/titan_sliver.png",
+          "dota_react/items/enchanted_quiver.png",
           "dota_react/items/cloak_of_flames.png",
+          "dota_react/items/ceremonial_robe.png",
           "dota_react/items/psychic_headband.png",
-          "dota_react/items/timeless_relic.png",
-          "dota_react/items/spell_prism.png",
+          "dota_react/items/ascetic_cap.png",
           "dota_react/items/ninja_gear.png",
           "dota_react/items/spy_gadget.png",
+          "dota_react/items/trickster_cloak.png",
+          "dota_react/items/stormcrafter.png",
+          "dota_react/items/mind_breaker.png",
           "dota_react/items/force_boots.png",
-          "dota_react/items/seer_stone.png",
+          "dota_react/items/desolator_2.png",
           "dota_react/items/mirror_shield.png",
+          "dota_react/items/apex.png",
+          "dota_react/items/demonicon.png",
           "dota_react/items/fallen_sky.png",
-          "dota_react/items/ex_machina.png" 
+          "dota_react/items/force_field.png",
+          "dota_react/items/pirate_hat.png",
+          "dota_react/items/ex_machina.png",
+          "dota_react/items/giants_ring.png",
+          "dota_react/items/book_of_shadows.png"
         ]
       ]
     else if (hero_name == 'LICH')
@@ -1869,6 +1976,69 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/ex_machina.png",
           "dota_react/items/giants_ring.png",
           "dota_react/items/book_of_shadows.png"
+        ]
+      ]
+    else if (hero_name == 'INVOKER')
+      return [
+        [
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/faerie_fire.png",
+          "dota_react/items/tango.png",
+          "dota_react/items/mantle.png",
+          "dota_react/items/circlet.png"
+        ],
+        [
+          "dota_react/items/null_talisman.png",
+          "dota_react/items/hand_of_midas.png",
+          "dota_react/items/boots.png",
+          "dota_react/items/wind_lace.png"
+        ],
+        [
+          "dota_react/items/blink.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/refresher.png"
+        ],
+        [
+          "dota_react/items/travel_boots.png",
+          "items/overwhelming_blink_lg.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/refresher.png",
+          "dota_react/items/sheepstick.png"
+        ],
+        [
+          "dota_react/items/sphere.png",
+          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/shivas_guard.png",
+          "dota_react/items/force_staff.png",
+          "dota_react/items/kaya_and_sange.png"
+        ],
+        [
+          "dota_react/items/trusty_shovel.png",
+          "dota_react/items/arcane_ring.png",
+          "dota_react/items/unstable_wand.png",
+          "dota_react/items/pogo_stick.png",
+          "dota_react/items/occult_bracelet.png",
+          "dota_react/items/faded_broach.png",
+          "dota_react/items/pupils_gift.png",
+          "dota_react/items/vambrace.png",
+          "dota_react/items/grove_bow.png",
+          "dota_react/items/quickening_charm.png",
+          "dota_react/items/dandelion_amulet.png",
+          "dota_react/items/titan_sliver.png",
+          "dota_react/items/cloak_of_flames.png",
+          "dota_react/items/psychic_headband.png",
+          "dota_react/items/timeless_relic.png",
+          "dota_react/items/spell_prism.png",
+          "dota_react/items/ninja_gear.png",
+          "dota_react/items/spy_gadget.png",
+          "dota_react/items/force_boots.png",
+          "dota_react/items/seer_stone.png",
+          "dota_react/items/mirror_shield.png",
+          "dota_react/items/fallen_sky.png",
+          "dota_react/items/ex_machina.png" 
         ]
       ]
     else if (hero_name == 'IO')
@@ -2646,6 +2816,90 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/book_of_shadows.png",
         ]
       ]
+    else if(hero_name == 'SPIRIT BREAKER')
+      return[
+        [
+          "dota_react/items/tango.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/ward_sentry.png",
+          "dota_react/items/blood_grenade.png",
+          "dota_react/items/wind_lace.png"
+        ],
+        [
+          "dota_react/items/spirit_vessel.png",
+          "dota_react/items/boots_of_bearing.png",
+          "dota_react/items/invis_sword.png"
+        ],
+        [
+          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/silver_edge.png"
+        ],
+        [
+          "dota_react/items/boots_of_bearing.png",
+          "dota_react/items/silver_edge.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/ultimate_scepter.png",
+          "hoodwink/aghanims_shard.png",
+          "dota_react/items/kaya_and_sange.png",
+          "items/heavens_halberd_lg.png"
+        ],
+        [
+          "dota_react/items/cyclone.png",
+          "dota_react/items/wind_waker.png",
+          "dota_react/items/assault.png",
+          "dota_react/items/heart.png",
+          "dota_react/items/lotus_orb.png",
+          "dota_react/items/pavise.png",
+          "dota_react/items/shivas_guard.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/solar_crest.png"
+        ],
+        [
+          "dota_react/items/trusty_shovel.png",
+          "dota_react/items/mysterious_hat.png",
+          "dota_react/items/unstable_wand.png",
+          "dota_react/items/pogo_stick.png",
+          "dota_react/items/occult_bracelet.png",
+          "dota_react/items/broom_handle.png",
+          "dota_react/items/faded_broach.png",
+          "dota_react/items/dragon_scale.png",
+          "dota_react/items/pupils_gift.png",
+          "dota_react/items/vambrace.png",
+          "dota_react/items/bullwhip.png",
+          "dota_react/items/orb_of_destruction.png",
+          "dota_react/items/vampire_fangs.png",
+          "dota_react/items/gossamer_cape.png",
+          "dota_react/items/quickening_charm.png",
+          "dota_react/items/defiant_shell.png",
+          "dota_react/items/paladin_sword.png",
+          "dota_react/items/vindicators_axe.png",
+          "dota_react/items/dandelion_amulet.png",
+          "dota_react/items/titan_sliver.png",
+          "dota_react/items/cloak_of_flames.png",
+          "dota_react/items/ceremonial_robe.png",
+          "dota_react/items/ogre_seal_totem.png",
+          "dota_react/items/timeless_relic.png",
+          "dota_react/items/spell_prism.png",
+          "dota_react/items/ascetic_cap.png",
+          "dota_react/items/ninja_gear.png",
+          "dota_react/items/trickster_cloak.png",
+          "dota_react/items/stormcrafter.png",
+          "dota_react/items/penta_edged_sword.png",
+          "dota_react/items/havoc_hammer.png",
+          "dota_react/items/mind_breaker.png",
+          "dota_react/items/martyrs_plate.png",
+          "dota_react/items/force_boots.png",
+          "dota_react/items/mirror_shield.png",
+          "dota_react/items/demonicon.png",
+          "dota_react/items/fallen_sky.png",
+          "dota_react/items/force_field.png",
+          "dota_react/items/ex_machina.png",
+          "dota_react/items/giants_ring.png",
+          "dota_react/items/book_of_shadows.png"
+        ]
+      ]
     else if(hero_name == 'TIDEHUNTER')
       return[
         [
@@ -2731,6 +2985,7 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/hand_of_midas.png"
         ],
         [
+          "dota_react/items/ultimate_scepter.png",
           "dota_react/items/manta.png",
           "dota_react/items/invis_sword.png",
           "dota_react/items/hurricane_pike.png",
@@ -3118,14 +3373,12 @@ function getItemImageSourcesArray (hero_name) {
         ],
         [
           "dota_react/items/manta.png",
-          "dota_react/items/ultimate_scepter.png",
           "dota_react/items/skadi.png",
           "dota_react/items/satanic.png"
         ],
         [
           "dota_react/items/swift_blink.png",
           "dota_react/items/manta.png",
-          "dota_react/items/ultimate_scepter.png",
           "dota_react/items/skadi.png",
           "dota_react/items/satanic.png",
           "dota_react/items/hurricane_pike.png",
@@ -3409,64 +3662,90 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/giants_ring.png"
         ]
       ]
-    else if (hero_name == 'INVOKER')
-      return [
+      else if(hero_name == "ENCHANTRESS")
+      return[
         [
           "dota_react/items/faerie_fire.png",
+          "dota_react/items/blood_grenade.png",
+          "dota_react/items/ward_sentry.png",
           "dota_react/items/tango.png",
-          "dota_react/items/circlet.png",
-          "dota_react/items/blood_grenade.png"
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png"
         ],
         [
-          "dota_react/items/urn_of_shadows.png",
           "dota_react/items/boots.png",
-          "dota_react/items/witch_blade.png"
+          "dota_react/items/solar_crest.png",
+          "dota_react/items/ancient_janggo.png"
         ],
         [
-          "dota_react/items/spirit_vessel.png",
-          "dota_react/items/blink.png",
-          "dota_react/items/black_king_bar.png",
-          "dota_react/items/octarine_core.png"
+          "hoodwink/aghanims_shard.png",
+          "dota_react/items/glimmer_cape.png",
+          "dota_react/items/force_staff.png",
+          "dota_react/items/boots_of_bearing.png"
         ],
         [
-          "dota_react/items/travel_boots.png",
-          "items/overwhelming_blink_lg.png",
-          "dota_react/items/black_king_bar.png",
-          "dota_react/items/octarine_core.png",
-          "dota_react/items/refresher.png",
+          "hoodwink/aghanims_shard.png",
+          "dota_react/items/glimmer_cape.png",
+          "dota_react/items/force_staff.png",
+          "dota_react/items/boots_of_bearing.png",
+          "dota_react/items/solar_crest.png",
+          "dota_react/items/guardian_greaves.png",
           "dota_react/items/sheepstick.png"
         ],
         [
-          "dota_react/items/sphere.png",
+          "dota_react/items/ghost.png",
           "dota_react/items/ultimate_scepter.png",
-          "dota_react/items/shivas_guard.png",
-          "dota_react/items/force_staff.png",
-          "dota_react/items/kaya_and_sange.png"
+          "dota_react/items/lotus_orb.png",
+          "dota_react/items/holy_locket.png",
+          "items/heavens_halberd_lg.png"
         ],
         [
           "dota_react/items/trusty_shovel.png",
           "dota_react/items/arcane_ring.png",
+          "dota_react/items/mysterious_hat.png",
           "dota_react/items/unstable_wand.png",
           "dota_react/items/pogo_stick.png",
+          "dota_react/items/lance_of_pursuit.png",
           "dota_react/items/occult_bracelet.png",
+          "dota_react/items/duelist_gloves.png",
           "dota_react/items/faded_broach.png",
+          "dota_react/items/spark_of_courage.png",
+          "dota_react/items/ring_of_aquila.png",
           "dota_react/items/pupils_gift.png",
           "dota_react/items/vambrace.png",
           "dota_react/items/grove_bow.png",
-          "dota_react/items/quickening_charm.png",
+          "dota_react/items/philosophers_stone.png",
+          "dota_react/items/bullwhip.png",
+          "dota_react/items/orb_of_destruction.png",
+          "dota_react/items/specialists_array.png",
+          "dota_react/items/vampire_fangs.png",
+          "dota_react/items/gossamer_cape.png",
+          "dota_react/items/defiant_shell.png",
+          "dota_react/items/paladin_sword.png",
+          "dota_react/items/vindicators_axe.png",
           "dota_react/items/dandelion_amulet.png",
           "dota_react/items/titan_sliver.png",
+          "dota_react/items/enchanted_quiver.png",
           "dota_react/items/cloak_of_flames.png",
+          "dota_react/items/ceremonial_robe.png",
           "dota_react/items/psychic_headband.png",
-          "dota_react/items/timeless_relic.png",
-          "dota_react/items/spell_prism.png",
+          "dota_react/items/ascetic_cap.png",
           "dota_react/items/ninja_gear.png",
           "dota_react/items/spy_gadget.png",
+          "dota_react/items/trickster_cloak.png",
+          "dota_react/items/stormcrafter.png",
+          "dota_react/items/mind_breaker.png",
           "dota_react/items/force_boots.png",
-          "dota_react/items/seer_stone.png",
+          "dota_react/items/desolator_2.png",
           "dota_react/items/mirror_shield.png",
+          "dota_react/items/apex.png",
+          "dota_react/items/demonicon.png",
           "dota_react/items/fallen_sky.png",
-          "dota_react/items/ex_machina.png" 
+          "dota_react/items/force_field.png",
+          "dota_react/items/pirate_hat.png",
+          "dota_react/items/ex_machina.png",
+          "dota_react/items/giants_ring.png",
+          "dota_react/items/book_of_shadows.png"
         ]
       ]
     else if (hero_name == 'LICH')
@@ -3906,6 +4185,66 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/book_of_shadows.png"
         ]
       ]
+    else if (hero_name == 'INVOKER')
+      return [
+        [
+          "dota_react/items/faerie_fire.png",
+          "dota_react/items/tango.png",
+          "dota_react/items/circlet.png",
+          "dota_react/items/blood_grenade.png"
+        ],
+        [
+          "dota_react/items/urn_of_shadows.png",
+          "dota_react/items/boots.png",
+          "dota_react/items/witch_blade.png"
+        ],
+        [
+          "dota_react/items/spirit_vessel.png",
+          "dota_react/items/blink.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/octarine_core.png"
+        ],
+        [
+          "dota_react/items/travel_boots.png",
+          "items/overwhelming_blink_lg.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/octarine_core.png",
+          "dota_react/items/refresher.png",
+          "dota_react/items/sheepstick.png"
+        ],
+        [
+          "dota_react/items/sphere.png",
+          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/shivas_guard.png",
+          "dota_react/items/force_staff.png",
+          "dota_react/items/kaya_and_sange.png"
+        ],
+        [
+          "dota_react/items/trusty_shovel.png",
+          "dota_react/items/arcane_ring.png",
+          "dota_react/items/unstable_wand.png",
+          "dota_react/items/pogo_stick.png",
+          "dota_react/items/occult_bracelet.png",
+          "dota_react/items/faded_broach.png",
+          "dota_react/items/pupils_gift.png",
+          "dota_react/items/vambrace.png",
+          "dota_react/items/grove_bow.png",
+          "dota_react/items/quickening_charm.png",
+          "dota_react/items/dandelion_amulet.png",
+          "dota_react/items/titan_sliver.png",
+          "dota_react/items/cloak_of_flames.png",
+          "dota_react/items/psychic_headband.png",
+          "dota_react/items/timeless_relic.png",
+          "dota_react/items/spell_prism.png",
+          "dota_react/items/ninja_gear.png",
+          "dota_react/items/spy_gadget.png",
+          "dota_react/items/force_boots.png",
+          "dota_react/items/seer_stone.png",
+          "dota_react/items/mirror_shield.png",
+          "dota_react/items/fallen_sky.png",
+          "dota_react/items/ex_machina.png" 
+        ]
+      ]
     else if (hero_name == 'IO')
       return [
         [
@@ -4276,6 +4615,28 @@ function getItemImageSourcesArray (hero_name) {
         "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg"
       ]
+    else if(hero_name == "SPIRIT BREAKER")
+      return[
+        "dota_react/abilities/spirit_breaker_greater_bash.png",
+        "dota_react/abilities/spirit_breaker_charge_of_darkness.png",
+        "dota_react/abilities/spirit_breaker_greater_bash.png",
+        "dota_react/abilities/spirit_breaker_charge_of_darkness.png",
+        "dota_react/abilities/spirit_breaker_greater_bash.png",
+        "dota_react/abilities/spirit_breaker_nether_strike.png",
+        "dota_react/abilities/spirit_breaker_greater_bash.png",
+        "dota_react/abilities/spirit_breaker_charge_of_darkness.png",
+        "dota_react/abilities/spirit_breaker_charge_of_darkness.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/abilities/spirit_breaker_bulldoze.png",
+        "dota_react/abilities/spirit_breaker_nether_strike.png",
+        "dota_react/abilities/spirit_breaker_bulldoze.png",
+        "dota_react/abilities/spirit_breaker_bulldoze.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/abilities/spirit_breaker_bulldoze.png",
+        "dota_react/abilities/spirit_breaker_nether_strike.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/icons/talents.svg"
+      ]
     else if (hero_name == 'TIDEHUNTER')
       return[
         "dota_react/abilities/tidehunter_gush.png",
@@ -4540,31 +4901,25 @@ function getItemImageSourcesArray (hero_name) {
         "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg"
       ]
-    else if(hero_name == 'INVOKER')
+    else if(hero_name == "ENCHANTRESS")
       return[
-        "dota_react/abilities/invoker_exort.png",
-        'dota_react/abilities/invoker_quas.png',
-        "dota_react/abilities/invoker_exort.png",
-        'dota_react/abilities/invoker_quas.png',
-        "dota_react/abilities/invoker_exort.png",
-        'dota_react/abilities/invoker_quas.png',
-        "dota_react/abilities/invoker_exort.png",
-        'dota_react/abilities/invoker_quas.png',
-        "dota_react/abilities/invoker_wex.png",
-        "dota_react/abilities/invoker_exort.png",
-        "dota_react/abilities/invoker_exort.png",
-        "dota_react/abilities/invoker_wex.png",
-        "dota_react/abilities/invoker_exort.png",
-        "dota_react/abilities/invoker_wex.png",
-        "dota_react/abilities/invoker_wex.png",
-        "dota_react/abilities/invoker_wex.png",
-        "dota_react/abilities/invoker_wex.png",
-        "dota_react/abilities/invoker_wex.png",
-        'dota_react/abilities/invoker_quas.png',
-        'dota_react/abilities/invoker_quas.png',
-        'dota_react/abilities/invoker_quas.png',
+        "dota_react/abilities/enchantress_impetus.png",
+        "dota_react/abilities/enchantress_enchant.png",
+        "dota_react/abilities/enchantress_impetus.png",
+        "dota_react/abilities/enchantress_natures_attendants.png",
+        "dota_react/abilities/enchantress_impetus.png",
+        "dota_react/abilities/enchantress_untouchable.png",
+        "dota_react/abilities/enchantress_impetus.png",
+        "dota_react/abilities/enchantress_natures_attendants.png",
+        "dota_react/abilities/enchantress_natures_attendants.png",
         "dota_react/icons/talents.svg",
+        "dota_react/abilities/enchantress_natures_attendants.png",
+        "dota_react/abilities/enchantress_untouchable.png",
+        "dota_react/abilities/enchantress_enchant.png",
+        "dota_react/abilities/enchantress_enchant.png",
         "dota_react/icons/talents.svg",
+        "dota_react/abilities/enchantress_enchant.png",
+        "dota_react/abilities/enchantress_untouchable.png",
         "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg"
       ]
@@ -4719,6 +5074,34 @@ function getItemImageSourcesArray (hero_name) {
         "dota_react/icons/talents.svg",
         "dota_react/abilities/enigma_midnight_pulse.png",
         "dota_react/abilities/enigma_black_hole.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/icons/talents.svg"
+      ]
+      else if(hero_name == 'INVOKER')
+      return[
+        "dota_react/abilities/invoker_exort.png",
+        'dota_react/abilities/invoker_quas.png',
+        "dota_react/abilities/invoker_exort.png",
+        'dota_react/abilities/invoker_quas.png',
+        "dota_react/abilities/invoker_exort.png",
+        'dota_react/abilities/invoker_quas.png',
+        "dota_react/abilities/invoker_exort.png",
+        'dota_react/abilities/invoker_quas.png',
+        "dota_react/abilities/invoker_wex.png",
+        "dota_react/abilities/invoker_exort.png",
+        "dota_react/abilities/invoker_exort.png",
+        "dota_react/abilities/invoker_wex.png",
+        "dota_react/abilities/invoker_exort.png",
+        "dota_react/abilities/invoker_wex.png",
+        "dota_react/abilities/invoker_wex.png",
+        "dota_react/abilities/invoker_wex.png",
+        "dota_react/abilities/invoker_wex.png",
+        "dota_react/abilities/invoker_wex.png",
+        'dota_react/abilities/invoker_quas.png',
+        'dota_react/abilities/invoker_quas.png',
+        'dota_react/abilities/invoker_quas.png',
+        "dota_react/icons/talents.svg",
+        "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg"
       ]
