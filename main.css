@@ -96,10 +96,14 @@
     transition: 0.3s;
   }
 
-  .added_skills{
+  .added_skills, .skill_img{
     margin: 5px;
     width: 80px;
     height: 80px;
+  }
+
+  .skill_img{
+    margin-inline: auto;
   }
 
   #allheroes{
@@ -181,6 +185,38 @@
     flex-direction: column;
 
     z-index: 100;
+
+    position: fixed;
+    display: flex;
+    background-color: #27262e;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    animation: slide 0.5s forwards;
+  }
+
+  .skill_deatils{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    gap: 10px;
+
+    position: fixed;
+    display: none;
+    flex-direction: column;
+
+    z-index: 101;
+  }
+
+  .skill_deatils_visible{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    gap: 10px;
+
+    position: fixed;
+    flex-direction: column;
+
+    z-index: 101;
 
     position: fixed;
     display: flex;
