@@ -261,7 +261,9 @@ function isMobileDevice() {
 
 $('drag2').onclick = function() {
   var skillDescription = $("skill_description");
+  var skillName = $("skill_name");
   skillDescription.textContent = "";
+  skillName = "";
   
   $('skill_info_window').style.top = "100%"; 
   
