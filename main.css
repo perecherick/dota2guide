@@ -162,6 +162,10 @@
     transition: 0.3s top;
   }
 
+  .full_skill_transition{
+    transition: 0.3s top;
+  }
+
   .full_hero_invisible{
     width: 100vw;
     height: 100vh;
@@ -207,7 +211,7 @@
     z-index: 101;
   }
 
-  .skill_deatils_visible{
+  .skill_details_visible{
     width: 100vw;
     height: 100vh;
     top: 0;
