@@ -584,6 +584,42 @@
     animation: slide 0.5s forwards;
   }
 
+  .full_skill_transition{
+    transition: 0.3s top;
+  }
+
+  .skill_details{
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      gap: 10px;
+
+      position: fixed;
+      display: none;
+      flex-direction: column;
+
+      z-index: 101;
+    }
+
+    .skill_details_visible{
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      gap: 10px;
+
+      position: fixed;
+      flex-direction: column;
+
+      z-index: 101;
+
+      position: fixed;
+      display: flex;
+      background-color: #27262e;
+      overflow-y: scroll;
+      scrollbar-width: 0;
+      animation: slide 0.5s forwards;
+    }
+
   @keyframes slide {
     from {
       margin-top: 50%;
