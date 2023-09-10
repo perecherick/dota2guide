@@ -876,6 +876,77 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/ex_machina.png"
         ]
       ]
+    else if (hero_name == 'GYROCOPTER')
+      return[
+        [
+          "dota_react/items/tango.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/circlet.png",
+          "dota_react/items/slippers.png"
+        ],
+        [
+          "dota_react/items/wraith_band.png",
+          "dota_react/items/power_treads.png",
+          "dota_react/items/lesser_crit.png",
+          "dota_react/items/ultimate_scepter.png"
+        ],
+        [
+          "dota_react/items/satanic.png",
+          "dota_react/items/greater_crit.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/butterfly.png"
+        ],
+        [
+          "dota_react/items/power_treads.png",
+          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/satanic.png",
+          "dota_react/items/greater_crit.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/butterfly.png",
+          "dota_react/items/rapier.png"
+        ],
+        [
+          "dota_react/items/sange_and_yasha.png",
+          "dota_react/items/skadi.png",
+          "dota_react/items/swift_blink.png",
+          "dota_react/items/monkey_king_bar.png",
+          "dota_react/items/nullifier.png",
+          "dota_react/items/sphere.png",
+          "dota_react/items/manta.png"
+        ],
+        [
+          "dota_react/items/arcane_ring.png",
+          "dota_react/items/unstable_wand.png",
+          "dota_react/items/lance_of_pursuit.png",
+          "dota_react/items/occult_bracelet.png",
+          "dota_react/items/duelist_gloves.png",
+          "dota_react/items/spark_of_courage.png",
+          "dota_react/items/ring_of_aquila.png",
+          "dota_react/items/pupils_gift.png",
+          "dota_react/items/vambrace.png",
+          "dota_react/items/grove_bow.png",
+          "dota_react/items/specialists_array.png",
+          "dota_react/items/vampire_fangs.png",
+          "dota_react/items/defiant_shell.png",
+          "dota_react/items/paladin_sword.png",
+          "dota_react/items/vindicators_axe.png",
+          "dota_react/items/titan_sliver.png",
+          "dota_react/items/elven_tunic.png",
+          "dota_react/items/ascetic_cap.png",
+          "dota_react/items/ninja_gear.png",
+          "dota_react/items/trickster_cloak.png",
+          "dota_react/items/mind_breaker.png",
+          "dota_react/items/force_boots.png",
+          "dota_react/items/desolator_2.png",
+          "dota_react/items/mirror_shield.png",
+          "dota_react/items/apex.png",
+          "dota_react/items/demonicon.png",
+          "dota_react/items/pirate_hat.png",
+          "dota_react/items/ex_machina.png",
+          "dota_react/items/giants_ring.png"
+        ]
+      ]
     else if (hero_name == 'JUGGERNAUT')
       return [
       [
@@ -3089,6 +3160,77 @@ function getItemImageSourcesArray (hero_name) {
           "dota_react/items/ex_machina.png"
         ]
       ]
+    else if (hero_name == 'GYROCOPTER')
+      return[
+        [
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/branches.png",
+          "dota_react/items/blades_of_attack.png"
+        ],
+        [
+          "dota_react/items/power_treads.png",
+          "dota_react/items/falcon_blade.png",
+          "dota_react/items/lesser_crit.png",
+          "dota_react/items/ultimate_scepter.png"
+        ],
+        [
+          "dota_react/items/dragon_lance.png",
+          "dota_react/items/satanic.png",
+          "dota_react/items/silver_edge.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/butterfly.png"
+        ],
+        [
+          "dota_react/items/power_treads.png",
+          "dota_react/items/ultimate_scepter.png",
+          "dota_react/items/satanic.png",
+          "dota_react/items/silver_edge.png",
+          "dota_react/items/black_king_bar.png",
+          "dota_react/items/butterfly.png",
+          "dota_react/items/hurricane_pike.png"
+        ],
+        [
+          "dota_react/items/sange_and_yasha.png",
+          "dota_react/items/skadi.png",
+          "dota_react/items/swift_blink.png",
+          "dota_react/items/monkey_king_bar.png",
+          "dota_react/items/nullifier.png",
+          "dota_react/items/sphere.png",
+          "dota_react/items/manta.png"
+        ],
+        [
+          "dota_react/items/arcane_ring.png",
+          "dota_react/items/unstable_wand.png",
+          "dota_react/items/lance_of_pursuit.png",
+          "dota_react/items/occult_bracelet.png",
+          "dota_react/items/duelist_gloves.png",
+          "dota_react/items/spark_of_courage.png",
+          "dota_react/items/ring_of_aquila.png",
+          "dota_react/items/pupils_gift.png",
+          "dota_react/items/vambrace.png",
+          "dota_react/items/grove_bow.png",
+          "dota_react/items/specialists_array.png",
+          "dota_react/items/vampire_fangs.png",
+          "dota_react/items/defiant_shell.png",
+          "dota_react/items/paladin_sword.png",
+          "dota_react/items/vindicators_axe.png",
+          "dota_react/items/titan_sliver.png",
+          "dota_react/items/elven_tunic.png",
+          "dota_react/items/ascetic_cap.png",
+          "dota_react/items/ninja_gear.png",
+          "dota_react/items/trickster_cloak.png",
+          "dota_react/items/mind_breaker.png",
+          "dota_react/items/force_boots.png",
+          "dota_react/items/desolator_2.png",
+          "dota_react/items/mirror_shield.png",
+          "dota_react/items/apex.png",
+          "dota_react/items/demonicon.png",
+          "dota_react/items/pirate_hat.png",
+          "dota_react/items/ex_machina.png",
+          "dota_react/items/giants_ring.png"
+        ]
+      ]
     else if (hero_name == 'JUGGERNAUT')
       return [
       [
@@ -4700,6 +4842,28 @@ function getItemImageSourcesArray (hero_name) {
         "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg",
         "dota_react/abilities/faceless_void_chronosphere.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/icons/talents.svg"
+      ]
+    else if (hero_name == 'GYROCOPTER')
+      return[
+        "dota_react/abilities/gyrocopter_homing_missile.png",
+        "dota_react/abilities/gyrocopter_flak_cannon.png",
+        "dota_react/abilities/gyrocopter_flak_cannon.png",
+        "dota_react/abilities/gyrocopter_rocket_barrage.png",
+        "dota_react/abilities/gyrocopter_flak_cannon.png",
+        "dota_react/abilities/gyrocopter_call_down.png",
+        "dota_react/abilities/gyrocopter_flak_cannon.png",
+        "dota_react/abilities/gyrocopter_homing_missile.png",
+        "dota_react/abilities/gyrocopter_homing_missile.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/abilities/gyrocopter_homing_missile.png",
+        "dota_react/abilities/gyrocopter_call_down.png",
+        "dota_react/abilities/gyrocopter_rocket_barrage.png",
+        "dota_react/abilities/gyrocopter_rocket_barrage.png",
+        "dota_react/icons/talents.svg",
+        "dota_react/abilities/gyrocopter_rocket_barrage.png",
+        "dota_react/abilities/gyrocopter_call_down.png",
         "dota_react/icons/talents.svg",
         "dota_react/icons/talents.svg"
       ]

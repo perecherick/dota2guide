@@ -97,9 +97,19 @@
   }
 
   .added_skills, .skill_img{
+    transition: 0.3s;
     margin: 5px;
     width: 80px;
     height: 80px;
+  }
+
+  .skill_img{
+    margin-top: 3vh;
+  }
+
+  .added_skills:hover{
+    cursor: pointer;
+    scale: 1.2;
   }
 
   .skill_img{
@@ -268,6 +278,7 @@
     color: white;
     display: block;
     margin: 0 auto;
+    user-select: none;
   }
 
   .recomended_items{
@@ -329,6 +340,7 @@
     overflow: hidden;
     box-shadow: 0 0 25px rgb(0, 0, 0);
     transition: transform .3s;
+    cursor: pointer;
   }
 
   .name:hover{

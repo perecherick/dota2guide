@@ -93,6 +93,8 @@ el.onclick = function() {
     startDragging(e);
   });
   
+  $("hero_description").innerText = uploadHeroDescription(hero_name);
+
   // show window
   full_hero.classList.add('full_hero_visible');
   full_hero.classList.remove('full_hero_invisible');
@@ -150,11 +152,12 @@ function setUpClickOnHeroSkills(skillEls) {
 }
 
 function openSkillInfoWindow(skillEl) {
-  // upload img
+  // upload img загрузка текста описания скила
   $("skill_img").src = skillEl.src;
 
   // upload description
   $("skill_description").innerText = uploadSkillDescription(skillEl.getAttribute("skill_name"));
+  $("skill_name").innerHTML = uploadSkillName(skillEl.getAttribute("skill_name"));
 
   // show window
   $("skill_info_window").classList.add('skill_details_visible');
