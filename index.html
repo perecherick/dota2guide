@@ -9,7 +9,7 @@
     <title>Dota2 Guide</title>
     <link rel="icon" type="image/png" href="logo.png">
 </head>
-<body>
+<body class="black">
 
     <div id="full_hero" class="full_hero_invisible">
         <div class="drag" id="drag"></div>
@@ -54,27 +54,27 @@
         <div class="recomended_items_2" id="recomended_items_2">
 
             <div class="start">
-                <h2>Начальный закуп</h2>
+                <h2 class="h2">Начальный закуп</h2>
                 <div class="hero_item_container"></div>
             </div>
             <div class="early">
-                <h2>Ранняя игра</h2>
+                <h2 class="h2">Ранняя игра</h2>
                 <div class="hero_item_container"></div>
             </div>
             <div class="mid">
-                <h2>Средина игры</h2>
+                <h2 class="h2">Средина игры</h2>
                 <div class="hero_item_container"></div>
             </div>
             <div class="end">
-                <h2>Финальный закуп</h2>
+                <h2 class="h2">Финальный закуп</h2>
                 <div class="hero_item_container"></div>
             </div>
             <div class="situation">
-                <h2>Предметы по ситуации</h2>
+                <h2 class="h2">Предметы по ситуации</h2>
                 <div class="hero_item_container"></div>
             </div>
             <div class="neutral">
-                <h2>Нейтральные предметы</h2>
+                <h2 class="h2">Нейтральные предметы</h2>
                 <div class="hero_item_container"></div>
             </div>
 
@@ -89,16 +89,26 @@
         <p id="skill_description" class="skill_description"></p>
     </div>
 
-    <div class="buttons">
-        <button id="hero" class="high_z" onclick="change()">Предметы</button>
-        <button id="item" class="low_z" onclick="change()">Герои</button>
+    <div class="button passive" id="button">
+        <div class="line_upper" id="line_1"></div>
+        <div class="line_middle" id="line_2"></div>
+        <div class="line_bottom" id="line_3"></div>
+    </div>
+
+    <div class="global_shadow" id="shadow"></div>
+      
+
+    <div class="side_menu" id="side_menu">
+        <img src="sun.png"  class="theme" id="theme">
+        <button class="change_to_hero" id="change_to_hero">Герои</button>
+        <button class="change_to_items" id="change_to_items">Предметы</button>
     </div>
 
 <div id="allheroes">
 
     <div id="strength">
 
-        <div class="info">
+        <div class="info" id="info_s">
             <h6>Герои с основным атрибутом "Сила"</h2>
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_strength.png" alt="" class="imgs">
         </div>
@@ -290,7 +300,7 @@
         </div>
     </div>
     <div id="agility">
-        <div class="info">
+        <div class="info" id="info_a">
             <h6>Герои с основным атрибутом "Ловкость"</h2>
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_agility.png" alt="" class="imgs">
         </div>
@@ -483,8 +493,8 @@
         </div>
     </div>
     <div id="intelegense">
-        <div class="info">
-            <h6>Герои с основным атрибутом "Интелект"</h2>
+        <div class="info" id="info_i">
+            <h6>Герои с основным атрибутом "Интелект"</h6>
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_intelligence.png" alt="" class="imgs">
         </div>
 
@@ -698,7 +708,7 @@
     
     </div>
     <div id="universal">
-        <div class="info">
+        <div class="info" id="info_u">
             <h6>Герои без основного атрибутa</h2>
             <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_universal.png" alt="" class="imgs">
         </div>

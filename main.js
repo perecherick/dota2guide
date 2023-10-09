@@ -18,28 +18,112 @@ $('change_items').onclick = function() {
   
   },); 
  }
+ 
+ $("change_to_hero").onclick = function() {
+     $("allheroes").style.display = "block";
+     $("allitems").style.display = "none";
+ }
 
-function change() {
-    const hero = $('hero');
-    const item = $('item');
-  
-    if (hero.classList.contains('high_z')) {
-      hero.classList.remove('high_z');
-      hero.classList.add('low_z');
-      item.classList.remove('low_z');
-      item.classList.add('high_z');
-      $("allheroes").style.display="none";
-      $("allitems").style.display="block";
-    } else {
-      hero.classList.remove('low_z');
-      hero.classList.add('high_z');
-      item.classList.remove('high_z');
-      item.classList.add('low_z');
-      $("allheroes").style.display="block";
-      $("allitems").style.display="none";
+$("change_to_items").onclick = function() {
+    $("allheroes").style.display = "none";
+    $("allitems").style.display = "block";
+}
+
+let arrow = $("button");
+let menu = $("side_menu");
+let shadow = $("shadow");
+let theme = $("theme");
+let line1 = $("line_1")
+let line2 = $("line_2")
+let line3 = $("line_3")
+let changeHero = $("change_to_hero");
+let changeItems = $("change_to_items");
+let th2 = document.getElementsByClassName("h2");
+let animationTimeout;
+
+arrow.onclick = function() {
+  if (arrow.classList.contains("passive")) {
+    menu.classList.add("side_menu_animation_right");
+    menu.classList.remove("side_menu_animation_left");
+    arrow.classList.remove("passive");
+    arrow.classList.add("clicked");
+    menu.style.display = "block";
+    shadow.style.display = "block";
+    shadow.classList.add("animation_on");
+    shadow.classList.remove("animation_off");
+    shadow.style.zIndex = "101";
+    clearTimeout(animationTimeout);
+  } else {
+    menu.classList.add("side_menu_animation_left");
+    menu.classList.remove("side_menu_animation_right");
+    arrow.classList.add("passive");
+    arrow.classList.remove("clicked");
+    shadow.classList.remove("animation_on");
+    animationTimeout = setTimeout(function() {
+      shadow.style.zIndex = "0";
+      shadow.classList.add("animation_off");
+    }, 300);
   }
 }
 
+shadow.onclick = function() {
+  arrow.click();
+}
+
+theme.onclick = function() {
+  let sunUrl = "sun.png";
+  let moonUrl = "moon.png";
+  if(document.body.classList.contains("black")){
+    document.body.classList.remove("black");
+    document.body.classList.add("white");
+    menu.style.backgroundColor = "#fff";
+    arrow.style.backgroundColor = "#fff";
+    line1.style.backgroundColor = "#181818";
+    line2.style.backgroundColor = "#181818";
+    line3.style.backgroundColor = "#181818";
+    changeHero.style.backgroundColor = "#fff";
+    changeHero.style.color = "#000";
+    changeItems.style.backgroundColor = "#fff";
+    changeItems.style.color = "#000";
+    $("info_s").style.color = "#000";
+    $("info_a").style.color = "#000";
+    $("info_i").style.color = "#000";
+    $("info_u").style.color = "#000";
+    fullHero.style.backgroundColor = "#27262e";
+    full_hero.style.backgroundColor = "#fff";
+    $("hero_description").style.color = "#000";
+    $("hero_name").style.color = "#000";
+    for (i = 0; i < th2.length; i++){
+      th2[i].style.color = "#000";
+    }
+    theme.src = moonUrl;
+  } else {
+    document.body.classList.remove("white");
+    document.body.classList.add("black");
+    menu.style.backgroundColor = "#181818";
+    arrow.style.backgroundColor = "#181818";
+    line1.style.backgroundColor = "#fff";
+    line2.style.backgroundColor = "#fff";
+    line3.style.backgroundColor = "#fff";
+    changeHero.style.backgroundColor = "#181818";
+    changeHero.style.color = "#fff";
+    changeItems.style.backgroundColor = "#181818";
+    changeItems.style.color = "#fff";
+    $("info_s").style.color = "#fff";
+    $("info_a").style.color = "#fff";
+    $("info_i").style.color = "#fff";
+    $("info_u").style.color = "#fff";
+    fullHero.style.backgroundColor = "#fff";
+    full_hero.style.backgroundColor = "#27262e";
+    $("hero_description").style.color = "#fff";
+    $("hero_name").style.color = "#fff";
+    for (i = 0; i < th2.length; i++){
+      th2[i].style.color = "#fff";
+    }
+    theme.src = sunUrl;
+  }
+}
+ 
 const detail_img = $('detail');
 const full_hero = $('full_hero');
 const skill = $('skill');
