@@ -39,6 +39,10 @@ let line3 = $("line_3")
 let changeHero = $("change_to_hero");
 let changeItems = $("change_to_items");
 let th2 = document.getElementsByClassName("h2");
+let first_layer = document.getElementsByClassName("first_layer");
+let second_layer = document.getElementsByClassName("second_layer");
+let third_layer = document.getElementsByClassName("third_layer");
+let fourth_layer = document.getElementsByClassName("fourth_layer");
 let animationTimeout;
 
 arrow.onclick = function() {
@@ -77,7 +81,6 @@ theme.onclick = function() {
     document.body.classList.remove("black");
     document.body.classList.add("white");
     menu.style.backgroundColor = "#fff";
-    arrow.style.backgroundColor = "#fff";
     line1.style.backgroundColor = "#181818";
     line2.style.backgroundColor = "#181818";
     line3.style.backgroundColor = "#181818";
@@ -96,12 +99,23 @@ theme.onclick = function() {
     for (i = 0; i < th2.length; i++){
       th2[i].style.color = "#000";
     }
+    for (let a = 0; a < first_layer.length; a++) {
+      first_layer[a].style.backgroundColor = "#D5D6CF";
+    }
+    for (let b = 0; b < second_layer.length; b++) {
+      second_layer[b].style.backgroundImage = "linear-gradient(to top, rgb(214, 214, 214), #e5e6e7)";
+    }
+    for (let c = 0; c < third_layer.length; c++) {
+      third_layer[c].style.backgroundColor = "#D5D6CF";
+    }
+    for (let d = 0; d < fourth_layer.length; d++) {
+      fourth_layer[d].style.backgroundImage = "linear-gradient(to top, rgb(214, 214, 214), #e5e6e7)";
+    }    
     theme.src = moonUrl;
   } else {
     document.body.classList.remove("white");
     document.body.classList.add("black");
     menu.style.backgroundColor = "#181818";
-    arrow.style.backgroundColor = "#181818";
     line1.style.backgroundColor = "#fff";
     line2.style.backgroundColor = "#fff";
     line3.style.backgroundColor = "#fff";
@@ -120,6 +134,18 @@ theme.onclick = function() {
     for (i = 0; i < th2.length; i++){
       th2[i].style.color = "#fff";
     }
+    for (let e = 0; e < first_layer.length; e++) {
+      first_layer[e].style.backgroundColor = "#2a2930";
+    }
+    for (let f = 0; f < second_layer.length; f++) {
+      second_layer[f].style.backgroundImage = "linear-gradient(to top, rgb(41, 41, 41), #1a1919)";
+    }
+    for (let g = 0; g < third_layer.length; g++) {
+      third_layer[g].style.backgroundColor = "#2a2930";
+    }
+    for (let z = 0; z < fourth_layer.length; z++) {
+      fourth_layer[z].style.backgroundImage = "linear-gradient(to top, rgb(41, 41, 41), #1a1919)";
+    }    
     theme.src = sunUrl;
   }
 }

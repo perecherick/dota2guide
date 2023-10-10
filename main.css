@@ -19,6 +19,52 @@
     font-family: "reaver";
   }
 
+  .first_layer{
+      top: -2vw;
+      left: 80vw;
+      rotate: 20deg;
+      width: 13vw;
+      height: 85vh;
+      position: fixed;
+      background-color: #2a2930;
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .second_layer{
+      top: 5vw;
+      left: 3vw;
+      z-index: 2;
+      rotate: 6deg;
+      width: 5em;
+      height: 35em;
+      position: fixed;
+      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+  
+  .third_layer{
+      top: 15vw;
+      left: 12vw;
+      rotate: -45deg;
+      width: 13vw;
+      height: 85vh;
+      position: fixed;
+      background-color: #2a2930;
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .fourth_layer{
+      top: 5vw;
+      left: 3vw;
+      z-index: 2;
+      rotate: 6deg;
+      width: 5em;
+      height: 35em;
+      position: fixed;
+      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
   .black{
     background-color: #27262e;
     color: #fff;
@@ -33,7 +79,7 @@
     width: 48px;
     height: 32px;
     margin-top: 15px;
-    background-color: #27262e;
+    background-color: #27262e00;
     position: fixed;
     z-index: 103;
     display: flex;
@@ -43,7 +89,7 @@
   }
 
   .button.clicked {
-    background-color: #181818;
+    background-color: #18181800;
   }
   
   .line_upper, .line_middle, .line_bottom {
@@ -51,6 +97,7 @@
     width: 35px;
     height: 5px;
     background-color: #fff;
+    transition: 0.2s;
   }
 
   .button.clicked .line_upper{
