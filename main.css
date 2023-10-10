@@ -121,6 +121,7 @@
     background-color: #1818187f;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    display: none;
   }
   
   .global_shadow.animation_on {
@@ -599,6 +600,191 @@
   body{
     background-color: #27262e;
     font-family: "reaver";
+  }
+
+  .first_layer{
+    top: -2vw;
+    left: 60vw;
+    rotate: 20deg;
+    width: 13vw;
+    height: 55vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .second_layer{
+    top: 1vw;
+    left: 1vw;
+    z-index: 2;
+    rotate: 6deg;
+    width: 1em;
+    height: 35em;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+  
+  .third_layer{
+    top: 65vw;
+    left: 30vw;
+    rotate: -45deg;
+    width: 13vw;
+    height: 55vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .fourth_layer{
+    left: 1vw;
+    z-index: 2;
+    rotate: 5.5deg;
+    width: 1em;
+    height: 35em;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .black{
+    background-color: #27262e;
+    color: #fff;
+  }
+
+  .white{
+    background-color: #fff;
+    color: #000;
+  }
+
+  .button {
+    width: 48px;
+    height: 32px;
+    margin-top: 15px;
+    background-color: #27262e00;
+    position: fixed;
+    z-index: 103;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button.clicked {
+    background-color: #18181800;
+  }
+  
+  .line_upper, .line_middle, .line_bottom {
+    transition: 0.1s;
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    transition: 0.2s;
+  }
+
+  .button.clicked .line_upper{
+    transform: rotate(-45deg);
+    margin-right: 17px;
+    margin-top: 11px;
+    width: 25px;
+  }
+
+  .button.clicked .line_bottom{
+    transform: rotate(45deg);
+    margin-right: 17px;
+    width: 25px;
+  }
+
+  .global_shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    background-color: #1818187f;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+  }
+  
+  .global_shadow.animation_on {
+    opacity: 1;
+  }  
+
+  .side_menu{
+    width: 25vw;
+    height: 100vh;
+    background: #181818;
+    position: fixed;
+    z-index: 102;
+    display: none;
+  }
+
+  .side_menu_animation_right{
+    animation: slideRight 0.3s forwards;
+  }
+  
+  .side_menu_animation_left{
+    animation: slideLeft 0.3s forwards;
+  }
+
+  @keyframes slideRight {
+    from {
+      transform: translateX(-25vw);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideLeft {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-25vw);
+    }
+  }
+
+  .theme{
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    float: right;
+  }
+
+  .change_to_hero{
+    width: 20vw;
+    height: 3vh;
+    margin: 5px;
+    color: #fff;
+    background-color: #181818;
+    border: none;
+    transition: 0.1s;
+  }
+  
+  .change_to_hero:active{
+    scale: 0.9;
+  }
+
+  .change_to_items{
+    width: 20vw;
+    height: 3vh;
+    color: #fff;
+    background-color: #181818;
+    border: none;
+    transition: 0.1s;
+  }
+
+  .change_to_items:active{
+    scale: 0.9;
+  }
+
+  h2{
+    user-select: none;
+  }
+
+  h1, h3{
+    padding: 5px;
   }
 
   h2{

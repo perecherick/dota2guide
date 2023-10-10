@@ -47,16 +47,17 @@ let animationTimeout;
 
 arrow.onclick = function() {
   if (arrow.classList.contains("passive")) {
-    menu.classList.add("side_menu_animation_right");
-    menu.classList.remove("side_menu_animation_left");
-    arrow.classList.remove("passive");
-    arrow.classList.add("clicked");
-    menu.style.display = "block";
     shadow.style.display = "block";
-    shadow.classList.add("animation_on");
-    shadow.classList.remove("animation_off");
-    shadow.style.zIndex = "101";
-    clearTimeout(animationTimeout);
+    animationTimeout = setTimeout(function() {
+      menu.classList.add("side_menu_animation_right");
+      menu.classList.remove("side_menu_animation_left");
+      arrow.classList.remove("passive");
+      arrow.classList.add("clicked");
+      menu.style.display = "block";
+      shadow.classList.add("animation_on");
+      shadow.classList.remove("animation_off");
+      shadow.style.zIndex = "101";
+    }, 1);
   } else {
     menu.classList.add("side_menu_animation_left");
     menu.classList.remove("side_menu_animation_right");
@@ -66,6 +67,7 @@ arrow.onclick = function() {
     animationTimeout = setTimeout(function() {
       shadow.style.zIndex = "0";
       shadow.classList.add("animation_off");
+      shadow.style.display = "none";
     }, 300);
   }
 }
