@@ -315,7 +315,11 @@ $('drag').onclick = function() {
   
   $('full_hero').style.top = "100%"; 
   $("fl").style.top = "-2vw";
-  $("fl2").style.top = "15vw";
+  if(isMobileDevice()){
+    $("fl2").style.top = "65vw";
+  } else {
+    $("fl2").style.top = "15vw";
+  }
   $("fl").style.display = "none";
   $("fl2").style.display = "none";
   setTimeout(() => {
@@ -371,13 +375,11 @@ function stopDragging() {
   }
 
   if(isMobileDevice()){
-    alert("auhgifuhgad");
-    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
-    fl2.style.top = "calc(" + divfullHero.style.top + " + 65vw)";  
+    fl.style.top = "-2vw";
+    fl2.style.top = "65vw";  
   } else {
-    alert("fsda");
-    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
-    fl2.style.top = "calc(" + divfullHero.style.top + " + 15vw)";  
+    fl.style.top = "-2vw";
+    fl2.style.top = "15vw";  
   }
 
   document.removeEventListener('mousemove', dragElement);
@@ -387,6 +389,10 @@ function stopDragging() {
   setTimeout(() => {
     divfullHero.classList.remove("full_hero_transition");
   }, 300);
+}
+
+function isMobileDevice() {
+  return window.innerWidth <= 414;
 }
 
 function dragElement(e) {
@@ -410,22 +416,45 @@ function dragElement(e) {
   }
 
   if(isMobileDevice()){
-    alert("auhgifuhgad");
     fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
     fl2.style.top = "calc(" + divfullHero.style.top + " + 65vw)";  
   } else {
-    alert("fsda");
     fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
     fl2.style.top = "calc(" + divfullHero.style.top + " + 15vw)";  
   }
 
+  document.addEventListener("DOMContentLoaded", function() {
+    
+    function enableScroll() {
+      // Разблокировать прокрутку страницы
+      document.body.style.overflow = "auto";
+    }
+  
+    function disableScroll() {
+      // Заблокировать прокрутку страницы
+      document.body.style.overflow = "hidden";
+    }
+  
+    divfullHero.addEventListener("click", function() {
+      // Переключить класс full_hero_visible
+      this.classList.toggle("full_hero_visible");
+  
+      if (this.classList.contains("full_hero_visible")) {
+        // Заблокировать прокрутку при отображении full_hero
+        disableScroll();
+      } else {
+        // Разблокировать прокрутку при скрытии full_hero
+        enableScroll();
+      }
+    });
+  });
+  
 
-  e.preventDefault();
+  e.stopPropagation();
 }
 
-function isMobileDevice() {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
+document.addEventListener('touchstart', startDragging);
+document.addEventListener('mousedown', startDragging);
 
 $('drag2').onclick = function() {
   var skillDescription = $("skill_description");
@@ -506,9 +535,49 @@ function dragElement2(e) {
     stopDragging2();
   }
   
-  e.preventDefault();  
+  e.stopPropagation();  
 }
 
 function isMobileDevice2() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  let divfullHero = document.getElementById("full_hero");
+  let isFullHeroVisible = false; // Флаг для отслеживания видимости full_hero
+  let scrollY = 0; // Сохранение текущей позиции прокрутки
+
+  // Функция для блокировки прокрутки страницы
+  function disableScroll() {
+    scrollY = window.scrollY; // Сохранить текущую позицию прокрутки
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+  }
+
+  // Функция для разблокировки прокрутки страницы
+  function enableScroll() {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, scrollY); // Восстановить позицию прокрутки
+  }
+
+  // Создаем MutationObserver
+  let observer = new MutationObserver(function(mutationsList) {
+    mutationsList.forEach(function(mutation) {
+      if (mutation.attributeName === "class") {
+        const isVisible = divfullHero.classList.contains("full_hero_visible");
+        if (isVisible !== isFullHeroVisible) {
+          isFullHeroVisible = isVisible;
+          if (isFullHeroVisible) {
+            disableScroll();
+          } else {
+            enableScroll();
+          }
+        }
+      }
+    });
+  });
+
+  // Начинаем отслеживать изменения в DOM
+  observer.observe(divfullHero, { attributes: true });
+});
