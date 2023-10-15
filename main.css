@@ -20,93 +20,85 @@
   }
 
   .first_layer{
-      top: -2vw;
-      left: 80vw;
-      rotate: 20deg;
-      width: 13vw;
-      height: 85vh;
-      position: fixed;
-      background-color: #2a2930;
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    top: 5vw;
+    left: 60vw;
+    width: 35vw;
+    height: 45vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
   }
 
   .second_layer{
-      top: 5vw;
-      left: 3vw;
-      rotate: 6deg;
-      width: 5em;
-      height: 35em;
-      position: fixed;
-      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    top: 15vh;
+    left: 65vw;
+    width: 25vw;
+    height: 35vh;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
   }
   
   .third_layer{
-      top: 15vw;
-      left: 12vw;
-      rotate: -45deg;
-      width: 13vw;
-      height: 85vh;
-      position: fixed;
-      background-color: #2a2930;
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    top: 25vw;
+    left: 10vw;
+    width: 35vw;
+    height: 45vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
   }
 
   .fourth_layer{
-      top: 5vw;
-      left: 3vw;
-      rotate: 6deg;
-      width: 5em;
-      height: 35em;
-      position: fixed;
-      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    top: 55vh;
+    left: 14vw;
+    width: 25vw;
+    height: 35vh;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
   }
 
   .first_layer_hero{
-      top: -2vw;
-      left: 80vw;
-      rotate: 20deg;
-      width: 13vw;
-      height: 85vh;
-      position: fixed;
-      background-color: #2a2930;
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
-      z-index: -1;
+    top: 5vw;
+    left: 60vw;
+    width: 35vw;
+    height: 45vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
+    z-index: -1;
   }
 
   .second_layer_hero{
-      top: 5vw;
-      left: 3vw;
-      rotate: 6deg;
-      width: 5em;
-      height: 35em;
-      position: fixed;
-      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    top: 15vh;
+    left: 65vw;
+    width: 25vw;
+    height: 35vh;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
   }
   
   .third_layer_hero{
-      top: 15vw;
-      left: 12vw;
-      rotate: -45deg;
-      width: 13vw;
-      height: 85vh;
-      position: fixed;
-      background-color: #2a2930;
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
-      z-index: -1;
+    top: 25vw;
+    left: 10vw;
+    width: 35vw;
+    height: 45vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
+    z-index: -1;
   }
 
   .fourth_layer_hero{
-      top: 5vw;
-      left: 3vw;
-      rotate: 6deg;
-      width: 5em;
-      height: 35em;
-      position: fixed;
-      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    top: 55vh;
+    left: 14vw;
+    width: 25vw;
+    height: 35vh;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
   }
 
   .fl_animation {
@@ -673,93 +665,83 @@
   .first_layer{
     top: -2vw;
     left: 60vw;
-    rotate: 20deg;
-    width: 13vw;
-    height: 55vh;
+    width: 35vw;
+    height: 45vh;
     position: fixed;
     background-color: #2a2930;
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(99% 11%, 72% 41%, 50% 64%, 0 92%, 18% 55%, 46% 32%);
   }
 
   .second_layer{
-    top: 1vw;
-    left: 1vw;
-    z-index: 2;
-    rotate: 6deg;
-    width: 1em;
-    height: 35em;
+    top: 3vh;
+    left: 65vw;
+    width: 25vw;
+    height: 35vh;
     position: fixed;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(99% 11%, 72% 41%, 50% 64%, 0 92%, 18% 55%, 46% 32%);
   }
   
   .third_layer{
-    top: 65vw;
-    left: 30vw;
-    rotate: -45deg;
-    width: 13vw;
-    height: 55vh;
+    top: 75vw;
+    left: 10vw;
+    width: 35vw;
+    height: 45vh;
     position: fixed;
     background-color: #2a2930;
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(8% 28%, 53% 39%, 77% 58%, 97% 85%, 47% 73%, 18% 52%);
   }
 
   .fourth_layer{
-    left: 1vw;
-    z-index: 2;
-    rotate: 5.5deg;
-    width: 1em;
-    height: 35em;
+    top: 50vh;
+    left: 14vw;
+    width: 25vw;
+    height: 35vh;
     position: fixed;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(8% 28%, 53% 39%, 77% 58%, 97% 85%, 47% 73%, 18% 52%);
   }
 
   .first_layer_hero{
     top: -2vw;
     left: 60vw;
-    rotate: 20deg;
-    width: 13vw;
-    height: 55vh;
+    width: 35vw;
+    height: 45vh;
     position: fixed;
     background-color: #2a2930;
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(99% 11%, 72% 41%, 50% 64%, 0 92%, 18% 55%, 46% 32%);
     z-index: -1;
   }
 
   .second_layer_hero{
-    top: 1vw;
-    left: 1vw;
-    z-index: 2;
-    rotate: 6deg;
-    width: 1em;
-    height: 35em;
+    top: 3vh;
+    left: 65vw;
+    width: 25vw;
+    height: 35vh;
     position: fixed;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(99% 11%, 72% 41%, 50% 64%, 0 92%, 18% 55%, 46% 32%);
   }
   
   .third_layer_hero{
-    top: 65vw;
-    left: 30vw;
-    rotate: -45deg;
-    width: 13vw;
-    height: 55vh;
+    top: 75vw;
+    left: 10vw;
+    width: 35vw;
+    height: 45vh;
     position: fixed;
     background-color: #2a2930;
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(8% 28%, 53% 39%, 77% 58%, 97% 85%, 47% 73%, 18% 52%);
     z-index: -1;
   }
 
   .fourth_layer_hero{
-    left: 1vw;
-    z-index: 2;
-    rotate: 5.5deg;
-    width: 1em;
-    height: 35em;
+    top: 50vh;
+    left: 14vw;
+    width: 25vw;
+    height: 35vh;
     position: fixed;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    clip-path: polygon(8% 28%, 53% 39%, 77% 58%, 97% 85%, 47% 73%, 18% 52%);
   }
 
   .fl_animation {
@@ -948,7 +930,7 @@
   }
 
   #strength, #agility, #intelegense, #universal{
-    margin: 25px;
+    margin: 0 25px 0 25px ;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

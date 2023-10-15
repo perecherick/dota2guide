@@ -199,11 +199,15 @@ for (let v = 0; v < heroes.length; v++) {
 for (let el of heroes)
 el.onclick = function() {
   
-    $("fl").classList.add("fl_animation_up");
-    $("fl2").classList.add("fl_animation_up");
+    fl.classList.add("fl_animation_up");
+    fl2.classList.add("fl_animation_up");
+    flc.classList.add("fl_animation_up");
+    fl2c.classList.add("fl_animation_up");
     setTimeout(() => {
       fl.classList.remove("fl_animation_up");
       fl2.classList.remove("fl_animation_up");
+      flc.classList.remove("fl_animation_up");
+      fl2c.classList.remove("fl_animation_up");
     }, 600);
   
   let hero_name = this.nextElementSibling.innerText;
@@ -340,6 +344,8 @@ let fullHero = $('drag');
 let divfullHero = $('full_hero');
 let fl = $('fl');
 let fl2 = $('fl2');
+let flс = $('flс');
+let fl2с = $('fl2с');
 let startY = 15;
 let isDragging = false;
 let newTop = 0;
@@ -375,11 +381,15 @@ function stopDragging() {
   }
 
   if(isMobileDevice()){
-    fl.style.top = "-2vw";
-    fl2.style.top = "65vw";  
+    fl.style.top = "-2vh";
+    fl2.style.top = "75vw";
+    flc.style.top = "3vh";
+    fl2c.style.top = "50vh";
   } else {
-    fl.style.top = "-2vw";
-    fl2.style.top = "15vw";  
+    fl.style.top = "5vw";
+    fl2.style.top = "25vw";  
+    flc.style.top = "15vh";
+    fl2c.style.top = "55vh";  
   }
 
   document.removeEventListener('mousemove', dragElement);
@@ -416,39 +426,16 @@ function dragElement(e) {
   }
 
   if(isMobileDevice()){
-    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
-    fl2.style.top = "calc(" + divfullHero.style.top + " + 65vw)";  
+    fl.style.top = "calc(" + divfullHero.style.top + " - 2vh)";
+    fl2.style.top = "calc(" + divfullHero.style.top + " + 75vw)";
+    flc.style.top = "calc(" + divfullHero.style.top + " + 3vh)";
+    fl2c.style.top = "calc(" + divfullHero.style.top + " + 50vh)";
   } else {
-    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
-    fl2.style.top = "calc(" + divfullHero.style.top + " + 15vw)";  
+    fl.style.top = "calc(" + divfullHero.style.top + " + 5vw)";
+    fl2.style.top = "calc(" + divfullHero.style.top + " + 25vw)";  
+    flc.style.top = "calc(" + divfullHero.style.top + " + 15vh)";
+    fl2c.style.top = "calc(" + divfullHero.style.top + " + 55vh)";  
   }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    
-    function enableScroll() {
-      // Разблокировать прокрутку страницы
-      document.body.style.overflow = "auto";
-    }
-  
-    function disableScroll() {
-      // Заблокировать прокрутку страницы
-      document.body.style.overflow = "hidden";
-    }
-  
-    divfullHero.addEventListener("click", function() {
-      // Переключить класс full_hero_visible
-      this.classList.toggle("full_hero_visible");
-  
-      if (this.classList.contains("full_hero_visible")) {
-        // Заблокировать прокрутку при отображении full_hero
-        disableScroll();
-      } else {
-        // Разблокировать прокрутку при скрытии full_hero
-        enableScroll();
-      }
-    });
-  });
-  
 
   e.stopPropagation();
 }
