@@ -43,6 +43,8 @@ let first_layer = document.getElementsByClassName("first_layer");
 let second_layer = document.getElementsByClassName("second_layer");
 let third_layer = document.getElementsByClassName("third_layer");
 let fourth_layer = document.getElementsByClassName("fourth_layer");
+let change_items = document.getElementsByClassName("change_items");
+let change_items_id = $("change_items");
 let animationTimeout;
 
 arrow.onclick = function() {
@@ -112,7 +114,12 @@ theme.onclick = function() {
     }
     for (let d = 0; d < fourth_layer.length; d++) {
       fourth_layer[d].style.backgroundImage = "linear-gradient(to top, rgb(214, 214, 214), #e5e6e7)";
-    }    
+    }
+    $('drag2').style.backgroundColor = "#27262e";
+    $("skill_info_window").style.background = "#fff";
+    change_items_id.style.color = "#000";
+    change_items_id.style.border = "1px solid #000000b0";
+    change_items_id.style.background = "radial-gradient(#00000035 100%, #00000000 0%)";
     theme.src = moonUrl;
   } else {
     document.body.classList.remove("white");
@@ -147,7 +154,12 @@ theme.onclick = function() {
     }
     for (let z = 0; z < fourth_layer.length; z++) {
       fourth_layer[z].style.backgroundImage = "linear-gradient(to top, rgb(41, 41, 41), #1a1919)";
-    }    
+    }
+    $('drag2').style.backgroundColor = "#fff";
+    $("skill_info_window").style.background = "#27262e";
+    change_items_id.style.color = "#fff";
+    change_items_id.style.border = "1px solid #ffffffb0";
+    change_items_id.style.background = "radial-gradient(#ffffff35 100%, #ffffff00 0%)";
     theme.src = sunUrl;
   }
 }
@@ -178,8 +190,21 @@ function changeHeroItemsSet () {
   
 let heroes = document.getElementsByClassName('hero');
 
+for (let v = 0; v < heroes.length; v++) {
+  v.onclick = function(){
+    
+  }
+}
+
 for (let el of heroes)
 el.onclick = function() {
+  
+    $("fl").classList.add("fl_animation_up");
+    $("fl2").classList.add("fl_animation_up");
+    setTimeout(() => {
+      fl.classList.remove("fl_animation_up");
+      fl2.classList.remove("fl_animation_up");
+    }, 600);
   
   let hero_name = this.nextElementSibling.innerText;
 
@@ -264,14 +289,11 @@ function setUpClickOnHeroSkills(skillEls) {
 }
 
 function openSkillInfoWindow(skillEl) {
-  // upload img загрузка текста описания скила
   $("skill_img").src = skillEl.src;
 
-  // upload description
   $("skill_description").innerText = uploadSkillDescription(skillEl.getAttribute("skill_name"));
   $("skill_name").innerHTML = uploadSkillName(skillEl.getAttribute("skill_name"));
 
-  // show window
   $("skill_info_window").classList.add('skill_details_visible');
   $("skill_info_window").classList.remove('skill_details');
 }
@@ -292,6 +314,15 @@ $('drag').onclick = function() {
   }
   
   $('full_hero').style.top = "100%"; 
+  $("fl").style.top = "-2vw";
+  $("fl2").style.top = "15vw";
+  $("fl").style.display = "none";
+  $("fl2").style.display = "none";
+  setTimeout(() => {
+    $("fl").style.display = "";
+    $("fl2").style.display = "";
+  }, 1000);
+
   
   $('full_hero').classList.add('full_hero_invisible');
 
@@ -303,6 +334,8 @@ $('drag').onclick = function() {
 
 let fullHero = $('drag');
 let divfullHero = $('full_hero');
+let fl = $('fl');
+let fl2 = $('fl2');
 let startY = 15;
 let isDragging = false;
 let newTop = 0;
@@ -316,60 +349,80 @@ function startDragging(e) {
     document.addEventListener('touchmove', dragElement);
     document.addEventListener('mouseup', stopDragging);
     document.addEventListener('touchend', stopDragging);
+
+    if(fl && fl2.classList.contains("fl_animation")){
+      fl.classList.remove("fl_animation");
+      fl2.classList.remove("fl_animation");
+    } else return
   }
 }
-
 
 function stopDragging() {
   isDragging = false;
   fullHero.style.cursor = 'grab';
   divfullHero.classList.add("full_hero_transition");
-  
-  if (newTop >= Number(divfullHero.clientHeight) * 0.5){
+  fl.classList.add("fl_animation");
+  fl2.classList.add("fl_animation");
+
+  if (newTop >= Number(divfullHero.clientHeight && fl.clientHeight && fl2.clientHeight) * 0.5) {
     $('drag').click();
   } else {
     divfullHero.style.top = "0";
   }
-  
-  // Удаляем обработчики событий, чтобы перестать перетаскивать элемент
+
+  if(isMobileDevice()){
+    alert("auhgifuhgad");
+    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
+    fl2.style.top = "calc(" + divfullHero.style.top + " + 65vw)";  
+  } else {
+    alert("fsda");
+    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
+    fl2.style.top = "calc(" + divfullHero.style.top + " + 15vw)";  
+  }
+
   document.removeEventListener('mousemove', dragElement);
   document.removeEventListener('touchmove', dragElement);
   document.removeEventListener('mouseup', stopDragging);
   document.removeEventListener('touchend', stopDragging);
-  setTimeout(()=>{
+  setTimeout(() => {
     divfullHero.classList.remove("full_hero_transition");
-  },300);
+  }, 300);
 }
 
 function dragElement(e) {
   if (!isDragging) return;
   let newY = 0;
-  if(isMobileDevice()) newY = e.touches[0].clientY;
+  if (isMobileDevice()) newY = e.touches[0].clientY;
   else newY = e.clientY;
   const deltaY = newY - startY;
   const currentTop = parseInt(window.getComputedStyle(fullHero).top, 10);
   newTop = currentTop + deltaY;
 
-  // Проверяем, если новая позиция y меньше нуля, устанавливаем y-координату равной нулю
-//  console.log(newY); 
   if (newTop < 0) {
     divfullHero.style.top = "0";
   } else {
     divfullHero.style.top = newTop + "px";
   }
 
-  // Проверяем, если див достиг отметки в 1000 пикселей по y-координате, выполняем функцию back
   if (newTop > Number(divfullHero.clientHeight) - 75) {
     $('drag').click();
     stopDragging();
   }
-  
 
-  // Используем preventDefault(), чтобы предотвратить прокрутку страницы при касании на мобильных устройствах
-  e.preventDefault();  
+  if(isMobileDevice()){
+    alert("auhgifuhgad");
+    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
+    fl2.style.top = "calc(" + divfullHero.style.top + " + 65vw)";  
+  } else {
+    alert("fsda");
+    fl.style.top = "calc(" + divfullHero.style.top + " - 2vw)";
+    fl2.style.top = "calc(" + divfullHero.style.top + " + 15vw)";  
+  }
+
+
+  e.preventDefault();
 }
 
-// Проверяем, если пользователь зашел с мобильного устройства
 function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
@@ -424,7 +477,6 @@ function stopDragging2() {
     fullHero2.style.top = "0";
   }
   
-  // Удаляем обработчики событий, чтобы перестать перетаскивать элемент
   document.removeEventListener('mousemove', dragElement2);
   document.removeEventListener('touchmove', dragElement2);
   document.removeEventListener('mouseup', stopDragging2);
@@ -443,21 +495,17 @@ function dragElement2(e) {
   const currentTop2 = parseInt(window.getComputedStyle($("drag2")).top, 10)
   newTop2 = currentTop2 + deltaY2;
 
-  // Проверяем, если новая позиция y меньше нуля, устанавливаем y-координату равной нулю
   if (newTop2 < 0) {
     fullHero2.style.top = "0";
   } else {
     fullHero2.style.top = newTop2 + "px";
   }
 
-  // Проверяем, если див достиг конца экрана -75 по y-координате, выполняем функцию back
   if (newTop2 > Number(fullHero2.clientHeight) - 75) {
     $('drag2').click();
     stopDragging2();
   }
   
-
-  // Используем preventDefault(), чтобы предотвратить прокрутку страницы при касании на мобильных устройствах
   e.preventDefault();  
 }
 

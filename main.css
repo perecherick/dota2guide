@@ -33,7 +33,6 @@
   .second_layer{
       top: 5vw;
       left: 3vw;
-      z-index: 2;
       rotate: 6deg;
       width: 5em;
       height: 35em;
@@ -56,7 +55,6 @@
   .fourth_layer{
       top: 5vw;
       left: 3vw;
-      z-index: 2;
       rotate: 6deg;
       width: 5em;
       height: 35em;
@@ -65,6 +63,69 @@
       clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
   }
 
+  .first_layer_hero{
+      top: -2vw;
+      left: 80vw;
+      rotate: 20deg;
+      width: 13vw;
+      height: 85vh;
+      position: fixed;
+      background-color: #2a2930;
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+      z-index: -1;
+  }
+
+  .second_layer_hero{
+      top: 5vw;
+      left: 3vw;
+      rotate: 6deg;
+      width: 5em;
+      height: 35em;
+      position: fixed;
+      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+  
+  .third_layer_hero{
+      top: 15vw;
+      left: 12vw;
+      rotate: -45deg;
+      width: 13vw;
+      height: 85vh;
+      position: fixed;
+      background-color: #2a2930;
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+      z-index: -1;
+  }
+
+  .fourth_layer_hero{
+      top: 5vw;
+      left: 3vw;
+      rotate: 6deg;
+      width: 5em;
+      height: 35em;
+      position: fixed;
+      background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+      clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .fl_animation {
+    transition: top .3s ease;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .fl_animation_up {
+    animation: slideUp .4s ease-in-out;
+  }
+  
   .black{
     background-color: #27262e;
     color: #fff;
@@ -237,6 +298,7 @@
   #mainitems{
     display: flex;
     justify-content: space-evenly;
+    position: relative;
   }
 
   #consumables, #accessories, #miscellaneous, #armor, #tier1, #tier4{
@@ -294,6 +356,7 @@
 
   #allheroes{
     display: block;
+    position: relative;
   }
 
   #allitems{
@@ -555,7 +618,7 @@
     align-items: center;
   }
     
-  .change_items button {
+  #change_items {
     width: 23ch; 
     color: #ffffff;
     border: 1px solid #ffffffb0;
@@ -570,12 +633,17 @@
     transition: .2s all; 
   }
 
-  .change_items button:active { 
+  #change_items:active { 
     transform: scale(0.95); 
   } 
 
-  .change_items button.active { 
+  #change_items.active { 
     background: radial-gradient(#ffffff35 -50%, #ffffff00 100%);
+    color: #fff;
+  }
+  
+  #change_items.active2 { 
+    background: radial-gradient(#00000035 -50%, #00000000 100%);
     color: #fff;
   }
 }
@@ -646,6 +714,71 @@
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
     clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
   }
+
+  .first_layer_hero{
+    top: -2vw;
+    left: 60vw;
+    rotate: 20deg;
+    width: 13vw;
+    height: 55vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    z-index: -1;
+  }
+
+  .second_layer_hero{
+    top: 1vw;
+    left: 1vw;
+    z-index: 2;
+    rotate: 6deg;
+    width: 1em;
+    height: 35em;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+  
+  .third_layer_hero{
+    top: 65vw;
+    left: 30vw;
+    rotate: -45deg;
+    width: 13vw;
+    height: 55vh;
+    position: fixed;
+    background-color: #2a2930;
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+    z-index: -1;
+  }
+
+  .fourth_layer_hero{
+    left: 1vw;
+    z-index: 2;
+    rotate: 5.5deg;
+    width: 1em;
+    height: 35em;
+    position: fixed;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(34% 24%, 85% 0%, 86% 34%, 14% 88%);
+  }
+
+  .fl_animation {
+    transition: top .3s ease;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .fl_animation_up {
+    animation: slideUp .4s ease-in-out;
+  }
+  
 
   .black{
     background-color: #27262e;
@@ -828,6 +961,7 @@
   #mainitems{
     display: flex;
     justify-content: space-evenly;
+    position: relative;
   }
 
   #consumables, #accessories, #miscellaneous, #armor, #tier1, #tier4{
@@ -871,6 +1005,7 @@
 
   #allheroes{
     display: block;
+    position: relative;
   }
 
   #allitems{
@@ -950,7 +1085,6 @@
 
     z-index: 100;
 
-    position: fixed;
     display: flex;
     background-color: #27262e;
     overflow-y: scroll;
