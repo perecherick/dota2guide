@@ -45,6 +45,8 @@ let third_layer = document.getElementsByClassName("third_layer");
 let fourth_layer = document.getElementsByClassName("fourth_layer");
 let change_items = document.getElementsByClassName("change_items");
 let change_items_id = $("change_items");
+var elements = document.querySelectorAll(".first_layer, .second_layer, .third_layer, .first_layer_hero, .second_layer_hero, .third_layer_hero");
+let innerElements = document.querySelectorAll(".first_inner_layer, .second_inner_layer, .third_inner_layer, .first_inner_layer_hero, .second_inner_layer_hero, .third_inner_layer_hero");
 let animationTimeout;
 
 arrow.onclick = function() {
@@ -103,16 +105,16 @@ theme.onclick = function() {
     for (i = 0; i < th2.length; i++){
       th2[i].style.color = "#000";
     }
-    for (let a = 0; a < first_layer.length; a++) {
+    for (a = 0; a < first_layer.length; a++) {
       first_layer[a].style.backgroundColor = "#D5D6CF";
     }
-    for (let b = 0; b < second_layer.length; b++) {
+    for (b = 0; b < second_layer.length; b++) {
       second_layer[b].style.backgroundImage = "linear-gradient(to top, rgb(214, 214, 214), #e5e6e7)";
     }
-    for (let c = 0; c < third_layer.length; c++) {
+    for (c = 0; c < third_layer.length; c++) {
       third_layer[c].style.backgroundColor = "#D5D6CF";
     }
-    for (let d = 0; d < fourth_layer.length; d++) {
+    for (d = 0; d < fourth_layer.length; d++) {
       fourth_layer[d].style.backgroundImage = "linear-gradient(to top, rgb(214, 214, 214), #e5e6e7)";
     }
     $('drag2').style.backgroundColor = "#27262e";
@@ -120,6 +122,12 @@ theme.onclick = function() {
     change_items_id.style.color = "#000";
     change_items_id.style.border = "1px solid #000000b0";
     change_items_id.style.background = "radial-gradient(#00000035 100%, #00000000 0%)";
+    for (e = 0; e < elements.length; e++) {
+      elements[e].style.backgroundColor = "#d5d6cf";
+    }
+    for (f = 0; f < innerElements.length; f++) {
+      innerElements[f].style.backgroundImage = "linear-gradient(to top, rgb(214, 214, 214), #e5e6e6)";
+    }
     theme.src = moonUrl;
   } else {
     document.body.classList.remove("white");
@@ -160,6 +168,12 @@ theme.onclick = function() {
     change_items_id.style.color = "#fff";
     change_items_id.style.border = "1px solid #ffffffb0";
     change_items_id.style.background = "radial-gradient(#ffffff35 100%, #ffffff00 0%)";
+    for (e = 0; e < elements.length; e++) {
+      elements[e].style.backgroundColor = "#2a2930";
+    }
+    for (f = 0; f < innerElements.length; f++) {
+      innerElements[f].style.backgroundImage = "linear-gradient(to top, rgb(41 41 41), #1a1919)";
+    }
     theme.src = sunUrl;
   }
 }
@@ -181,7 +195,6 @@ function changeHeroItemsSet () {
   }
 }
 
-
 /* $("skill").onclick = function() {
   let skill_link = event.target.getAttribute("skill");
   
@@ -190,25 +203,8 @@ function changeHeroItemsSet () {
   
 let heroes = document.getElementsByClassName('hero');
 
-for (let v = 0; v < heroes.length; v++) {
-  v.onclick = function(){
-    
-  }
-}
-
 for (let el of heroes)
 el.onclick = function() {
-  
-    fl.classList.add("fl_animation_up");
-    fl2.classList.add("fl_animation_up");
-    flc.classList.add("fl_animation_up");
-    fl2c.classList.add("fl_animation_up");
-    setTimeout(() => {
-      fl.classList.remove("fl_animation_up");
-      fl2.classList.remove("fl_animation_up");
-      flc.classList.remove("fl_animation_up");
-      fl2c.classList.remove("fl_animation_up");
-    }, 600);
   
   let hero_name = this.nextElementSibling.innerText;
 
@@ -318,18 +314,6 @@ $('drag').onclick = function() {
   }
   
   $('full_hero').style.top = "100%"; 
-  $("fl").style.top = "-2vw";
-  if(isMobileDevice()){
-    $("fl2").style.top = "65vw";
-  } else {
-    $("fl2").style.top = "15vw";
-  }
-  $("fl").style.display = "none";
-  $("fl2").style.display = "none";
-  setTimeout(() => {
-    $("fl").style.display = "";
-    $("fl2").style.display = "";
-  }, 1000);
 
   
   $('full_hero').classList.add('full_hero_invisible');
@@ -342,10 +326,6 @@ $('drag').onclick = function() {
 
 let fullHero = $('drag');
 let divfullHero = $('full_hero');
-let fl = $('fl');
-let fl2 = $('fl2');
-let flс = $('flс');
-let fl2с = $('fl2с');
 let startY = 15;
 let isDragging = false;
 let newTop = 0;
@@ -359,11 +339,6 @@ function startDragging(e) {
     document.addEventListener('touchmove', dragElement);
     document.addEventListener('mouseup', stopDragging);
     document.addEventListener('touchend', stopDragging);
-
-    if(fl && fl2.classList.contains("fl_animation")){
-      fl.classList.remove("fl_animation");
-      fl2.classList.remove("fl_animation");
-    } else return
   }
 }
 
@@ -371,25 +346,11 @@ function stopDragging() {
   isDragging = false;
   fullHero.style.cursor = 'grab';
   divfullHero.classList.add("full_hero_transition");
-  fl.classList.add("fl_animation");
-  fl2.classList.add("fl_animation");
 
-  if (newTop >= Number(divfullHero.clientHeight && fl.clientHeight && fl2.clientHeight) * 0.5) {
+  if (newTop >= Number(divfullHero.clientHeight) * 0.5) {
     $('drag').click();
   } else {
     divfullHero.style.top = "0";
-  }
-
-  if(isMobileDevice()){
-    fl.style.top = "-2vh";
-    fl2.style.top = "75vw";
-    flc.style.top = "3vh";
-    fl2c.style.top = "50vh";
-  } else {
-    fl.style.top = "5vw";
-    fl2.style.top = "25vw";  
-    flc.style.top = "15vh";
-    fl2c.style.top = "55vh";  
   }
 
   document.removeEventListener('mousemove', dragElement);
@@ -423,18 +384,6 @@ function dragElement(e) {
   if (newTop > Number(divfullHero.clientHeight) - 75) {
     $('drag').click();
     stopDragging();
-  }
-
-  if(isMobileDevice()){
-    fl.style.top = "calc(" + divfullHero.style.top + " - 2vh)";
-    fl2.style.top = "calc(" + divfullHero.style.top + " + 75vw)";
-    flc.style.top = "calc(" + divfullHero.style.top + " + 3vh)";
-    fl2c.style.top = "calc(" + divfullHero.style.top + " + 50vh)";
-  } else {
-    fl.style.top = "calc(" + divfullHero.style.top + " + 5vw)";
-    fl2.style.top = "calc(" + divfullHero.style.top + " + 25vw)";  
-    flc.style.top = "calc(" + divfullHero.style.top + " + 15vh)";
-    fl2c.style.top = "calc(" + divfullHero.style.top + " + 55vh)";  
   }
 
   e.stopPropagation();

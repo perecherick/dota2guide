@@ -20,85 +20,130 @@
   }
 
   .first_layer{
-    top: 5vw;
+    top: 10vh;
     left: 60vw;
     width: 35vw;
     height: 45vh;
-    position: fixed;
+    position: absolute;
     background-color: #2a2930;
     clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
+    z-index: -1;
   }
 
-  .second_layer{
-    top: 15vh;
-    left: 65vw;
+  .first_inner_layer{
+    left: 4vw;
+    top: 5vh;
     width: 25vw;
     height: 35vh;
-    position: fixed;
+    position: relative;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
     clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
   }
   
-  .third_layer{
-    top: 25vw;
+  .second_layer{
+    top: 40vh;
     left: 10vw;
     width: 35vw;
     height: 45vh;
-    position: fixed;
+    position: absolute;
     background-color: #2a2930;
+    clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
+    z-index: -1;
+  }
+
+  .second_inner_layer{
+    left: 4vw;
+    top: 5vh;
+    width: 25vw;
+    height: 35vh;
+    position: relative;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
     clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
   }
 
-  .fourth_layer{
-    top: 55vh;
-    left: 14vw;
-    width: 25vw;
+  .third_layer{
+    top: 100vh;
+    left: 40vw;
+    width: 45vw;
+    height: 45vh;
+    position: absolute;
+    background-color: #2a2930;
+    clip-path: polygon(74% 0, 73% 41%, 63% 73%, 43% 100%, 48% 62%, 57% 38%);
+    z-index: -1;
+  }
+
+  .third_inner_layer{
+    left: 6vw;
+    top: 6vh;
+    width: 35vw;
     height: 35vh;
-    position: fixed;
+    position: relative;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
-    clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
+    clip-path: polygon(74% 0, 73% 41%, 63% 73%, 43% 100%, 48% 62%, 57% 38%);
   }
 
   .first_layer_hero{
-    top: 5vw;
+    top: 10vh;
     left: 60vw;
     width: 35vw;
     height: 45vh;
-    position: fixed;
+    position: absolute;
     background-color: #2a2930;
     clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
     z-index: -1;
   }
 
-  .second_layer_hero{
-    top: 15vh;
-    left: 65vw;
+  .first_inner_layer_hero{
+    left: 4vw;
+    top: 5vh;
     width: 25vw;
     height: 35vh;
-    position: fixed;
+    position: relative;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
     clip-path: polygon(100% 0, 64% 45%, 45% 69%, 0 100%, 33% 51%, 52% 27%);
   }
   
-  .third_layer_hero{
-    top: 25vw;
+  .second_layer_hero{
+    top: 40vh;
     left: 10vw;
     width: 35vw;
     height: 45vh;
-    position: fixed;
+    position: absolute;
     background-color: #2a2930;
     clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
     z-index: -1;
   }
 
-  .fourth_layer_hero{
-    top: 55vh;
-    left: 14vw;
+  .second_inner_layer_hero{
+    left: 4vw;
+    top: 5vh;
     width: 25vw;
     height: 35vh;
-    position: fixed;
+    position: relative;
     background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
     clip-path: polygon(11% 7%, 45% 39%, 69% 64%, 87% 97%, 48% 73%, 24% 49%);
+  }
+
+  .third_layer_hero{
+    top: 100vh;
+    left: 40vw;
+    width: 45vw;
+    height: 45vh;
+    position: absolute;
+    background-color: #2a2930;
+    clip-path: polygon(74% 0, 73% 41%, 63% 73%, 43% 100%, 48% 62%, 57% 38%);
+    overflow-y: hidden;
+    z-index: -1;
+  }
+
+  .third_inner_layer_hero{
+    left: 6vw;
+    top: 6vh;
+    width: 35vw;
+    height: 35vh;
+    position: relative;
+    background-image: linear-gradient(to top, rgb(41 41 41), #1a1919);
+    clip-path: polygon(74% 0, 73% 41%, 63% 73%, 43% 100%, 48% 62%, 57% 38%);
   }
 
   .fl_animation {
